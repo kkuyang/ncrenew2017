@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>NCSOFT 홍보채널</title>
+<meta charset="utf-8">
+<meta name="robots" content="index,flow">
+<meta name="title" content="NCSOFT">
+<meta name="description" content="NCSOFT소개,엔씨소프트소개,NCSOFT,엔씨소프트,게임 개발 및 서비스업체">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="./img/common/logo.ico" />
+<link rel="stylesheet" href="./css/import.css" />
+<link rel="stylesheet" href="./css/subcommon.css" />
+<!--스크롤움직임-->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<!--드롭다운메뉴-->
+<script type="text/javascript" src="./js/jquery.selectDrop.js"></script>
+<!-- Swiper JS -->
+<script src="./js/swiper.min.js"></script>
+
+<!--스크롤움직임-->
+<script type="text/javascript">
+$(function() { 
+    function swing() { 
+        $('.top').animate({'bottom':'130px'},800).animate({'bottom':'190px'},800, swing); 
+    } 
+    swing(); 
+});
+
+
+</script>
+
+
+</head>
+
+<body  onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
+	<main>
+	<header><!--nav-->
+			<div class="inner"><!--inner-->
+			<h1 class="PC"><a href="index.html" title="NCSOFT LOGO"><img src="./img/common/logo1.png" alt="logo" /></a></h1>
+			<h1 class="mobile"><a href="index.html" title="MOBILE NCSOFT LOGO"><img src="./img/common/mobilelogo1.png" alt="logo" /></a></h1>
+	
+			<section class="nav_tab">
+				<ul class="navtbul">
+						<li class="navgation"><a href="sub.html" onclick="subtab_menu(0);">기업소개</a></li>
+						<li  class="navgation"><a href="sub2.html"onclick="subtab_menu(1);">서비스소개</a></li>
+						<li  class="navgation"><a href="sub3.html"onclick="subtab_menu(2);">인재채용</a></li>
+						<li  class="navgation"><a href="sub4.html"onclick="subtab_menu(3);">사회공헌</a></li>
+						<li  class="navgation active"><a href="sub5.html"onclick="subtab_menu(4);">홍보채널</a></li>
+						<li class="login"><a href="login.html" title="로그인">로그인</a></li>
+						<li class="logo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+				</ul>
+			</section>
+				
+				<script>
+				function subtab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}
+				</script>
+				
+			</div><!--inner-->
+		</header><!--//nav-->
+	
+	<!--햄버거 메뉴 시작-->
+			<div id="qnb">
+					<nav id="menu" class="left">
+					  <ul>
+							<li><a href="sub.html">기업소개</a></li>
+						<li><a href="sub2.html">서비스소개</a></li>
+						<li><a href="sub3.html">인재채용</a></li>
+						<li><a href="sub4.html">사회공헌</a></li>
+						<li><a href="sub5.html">홍보채널</a></li>
+						<li class="qnblogin"><a href="login.html" title="로그인"><img src="./img/common/login_bt1.png" onmouseover="this.src='./img/common/login_btov.png'" onmouseout="this.src='./img/common/login_bt1.png'" border="0"></a>
+						</li>
+						<li class="qnblogo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+					  </ul>
+					<a href="#" id="showmenu"><img src="./img/common/qna.png" class="imgg"/><i class="fa fa-align-justify"></i> </a> </nav>
+				</div>
+				<!--햄버거 제이쿼리-->
+					<script>
+							$("#showmenu").click(function(e){
+								e.preventDefault();
+								$("#menu").toggleClass("show");
+							});
+				
+					</script>
+			
+			
+			
+			<script>
+						//상단 내비게이션 클릭시 처리하는 부분
+						var swiper = new Swiper('.cate_layer');
+
+						function goSlide(index){
+						swiper.slideTo(index, 1000, true);
+						}
+						
+						$('.imgg').on({ 
+							'click': function() { 
+								 var src = ($(this).attr('src') === './img/common/qna.png') 
+									? './img/common/closebtn.png'
+									: './img/common/qna.png'; 
+								 $(this).attr('src', src); 
+							} 
+						});
+						
+						
+						/*function tab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}*/
+						</script>
+			<!--햄버거 메뉴 종료-->		
+	
+		<div class="top">
+			<div class="topbg"><a href="#" class="topText"><img src="./img/sub/topbg.png" alt="topbg" /></a></div>
+			<script>
+					$( '.topText' ).click( function() {
+					  $( 'html, body' ).animate( { scrollTop : 0 }, 0 );
+					  return false;
+					} );
+					/*a href="javascript:scrollUp()"
+					var scrollUpDelay = 1;
+					var scrollUpSpeed = 30;//위로 올라가는 속도, 숫자가 클수록 빨라짐
+					function scrollUp()
+					{
+					if(document.body.scrollTop<1)
+					{
+					return;
+					}
+					document.body.scrollTop=document.body.scrollTop-scrollUpSpeed;
+					setTimeout('scrollUp()',scrollUpDelay);
+					}*/
+					</script>
+		</div>
+		
+		<section id="sub5visual"><!--sub5visual-->
+		</section><!--//sub5visual-->
+		
+		<section id="sub5contents"><!--sub5contents-->
+		
+			<div  class="sub5contentsinner">
+					
+					<div class="newsboard">
+					
+					<p>NC뉴스</p>
+						<table>
+						
+						<tr>
+						<th class="newsyear">날짜</th>
+						<th class="newstitle">제목</th>
+						</tr>
+
+						<tr>
+						<td>2017.05.22</td>
+						<td class="tdtxt"><a href="http://www.hani.co.kr/arti/economy/it/794920.html" target="_blank"><span>엔씨소프트 “리니지M 6월21일 출시”</span> 엔씨소프트가 첫 온라인게임 ‘리니지’를 모바일게임으로 재탄생시킨 ‘리니지M’을 6월21일 출시한다. 리니지 후속작 ‘리니지2’을 모바일게임으로 리메이크한 넷마블게임즈의 ‘리니지 레볼루션2’을 앞설 수 있을지 주목된다. </a></td>
+						</tr>
+						
+						<tr>
+						<td>2017.04.24</td>
+						<td class="tdtxt"><a href="http://news.hankyung.com/industry/2017/04/24/2017042418881" target="_blank"><span>엔씨 '리니지M' 사전예약 돌풍…'리니지 종가' 자존심 되찾나</span> 엔씨소프트의 모바일 다중접속역할수행게임(MMORPG) ‘리니지M’의 초반 흥행 돌풍이 거세다. 국내 모바일게임 가운데 가장 짧은 기간에 사전예약자 200만명을 돌파했다.</a></td>
+						</tr>
+						
+						<tr>
+						<td>2017.04.03</td>
+						<td class="tdtxt"><a href="http://sports.khan.co.kr/bizlife/sk_index.html?art_id=201704031902003&sec_id=560201&pt=nv#csidx7295956c6945d51b870d71c0fc3fbb8" target="_blank"><span>엔씨소프트는 이렇게 ‘모바일 우등생’이 됐다</span> 엔씨소프트의 ‘체질 개선 프로젝트’가 화룡점정을 향해 치닫고 있다. 잇단 히트작으로 ‘모바일 시대에 뒤처졌다’는 일부의 우려를 깨끗이 씻은 데 이어 VR(가상현실)과 AI(인공 지능) 등 다양한 분야에서 게임업계의 리더답게 발빠른 행보를 보이고 있다.</a></td>
+						</tr>
+						
+						<tr>
+						<td>2017.03.01</td>
+						<td class="tdtxt"><a href="http://www.inven.co.kr/webzine/news/?news=173261&sw=%EB%B8%94%EC%86%8C+%ED%85%8C%EC%9D%B4%EB%B8%94" target="_blank"><span>엔씨소프트의 첫 VR 게임 '블소 테이블 아레나'</span> 오큘러스를 활용한 다양한 VR 게임을 시연해볼 수 있는 '오큘러스 커뮤니티 게임 데이(Oculus Community Game Day)'가 미국 샌프란시스코에서 개최됐습니다.</a></td>
+						</tr>
+						
+						<tr>
+						<td>2017.02.28</td>
+						<td class="tdtxt"><a href="http://news.donga.com/3/all/20170227/83085129/1" target="_blank"><span>슈팅 액션게임 ‘MXM’으로 美-中 시장 공략</span> 엔씨소프트는 미국과 중국 시장 진출을 목표로 선보일 PC-온라인 게임 신작 '마스터엑스마스터(MXM)'의 테스트를 28일까지 비공개로 진행한다.</a></td>
+						</tr>
+						
+						<tr>
+						<td>2017.02.03</td>
+						<td class="tdtxt"><a href="http://it.chosun.com/news/article.html?no=2830227" target="_blank"><span>엔씨소프트 사내 어린이집 ‘웃는땅콩’, 교육서비스 분야 ISO 인증 획득</span> 엔씨소프트는 사내 어린이집 '웃는땅콩'이 국제표준화기구(International Organization for Standardization, IOS)의 국제 인증을 획득했다고 3일 밝혔다.</a></td>
+						</tr>
+						
+						<tr>
+						<td>2017.01.03</td>
+						<td class="tdtxt"><a href="http://news.mk.co.kr/newsRead.php?no=4146&year=2017" target="_blank"><span>엔씨소프트, 리니지 명성 모바일 `리니지M`서 잇는다</span> 엔씨소프트의 '리니지' IP를 활용한 첫 모바일 게임인 '리니지 레드나이츠'는 지난해 12월 8일 출시하자마자 애플 앱스토어와 구글 플레이스토어 양대 마켓 최고 매출과 인기 게임 순위 1위를 달성했다.</a></td>
+						</tr>
+						
+						</table>
+
+						<ul class="newsnav">
+						<li><a href="#javascript:void(0)" class="arrow1"></a></li>
+						<li class="active"><a href="#javascript:void(0)" class="boardnum" onclick="boardnum(1);">1</a></li>
+						<li><a href="#javascript:void(0)" class="boardnum" onclick="boardnum(2);">2</a></li>
+						<li><a href="#javascript:void(0)" class="boardnum" onclick="boardnum(3);">3</a></li>
+						<li><a href="#javascript:void(0)" class="boardnum" onclick="boardnum(4);">4</a></li>
+						<li><a href="#javascript:void(0)" class="boardnum" onclick="boardnum(5);">5</a></li>
+						<li><a href="#javascript:void(0)" class="arrow2"></a></li>
+						</ul>
+						
+							<script>
+				function boardnum(num){ 
+						var f = $('.newsnav').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.newsnav0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.newsnav0' + i ).hide();
+						}}}
+				</script>
+						
+					</div>
+					
+					<div class="newsboard2">
+					
+					<p>NC보도자료</p>
+						<table>
+						
+						<tr>
+						<th class="newsnum">번호</th>
+						<th class="newsyear">날짜</th>
+						<th class="newstitle">제목</th>
+						<th class="newsname">글쓴이</th>
+						</tr>
+
+						<tr>
+						<td class="pagenum">1</td>
+						<td>2017.06.05</td>
+						<td class="tdtxt1"><a href="#javascript:void(0)">리니지M, 사전 예약자 500만명 돌파 기념 이벤트 진행</a></td>
+						<td class="txtname">NC지기</td>
+						</tr>
+						
+						<tr>
+						<td class="pagenum">2</td>
+						<td>2017.06.02</td>
+						<td class="tdtxt1"><a href="#javascript:void(0)">블레이드 & 소울, 신규 클래스 ‘격사’ 정보 공개</a></td>
+						<td class="txtname">NC지기</td>
+						</tr>
+						
+						<tr>
+						<td class="pagenum">3</td>
+						<td>2017.06.02</td>
+						<td class="tdtxt1"><a href="#javascript:void(0)">엔씨소프트, 신작 MXM 6월 21일 북미/유럽 출시</a></td>
+						<td class="txtname">NC지기</td>
+						</tr>
+						
+						<tr>
+						<td class="pagenum">4</td>
+						<td>2017.05.31</td>
+						<td class="tdtxt1"><a href="#javascript:void(0)">블레이드 & 소울, 격사 업데이트 사전 등록 시작</a></td>
+						<td class="txtname">NC지기</td>
+						</tr>
+						
+						<tr>
+						<td class="pagenum">5</td>
+						<td>2017.05.31</td>
+						<td class="tdtxt1"><a href="#javascript:void(0)">리니지 레드나이츠, 신규 콘텐츠 업데이트 실시</a></td>
+						<td class="txtname">NC지기</td>
+						</tr>
+						
+						<tr>
+						<td class="pagenum">6</td>
+						<td>2017.05.31</td>
+						<td class="tdtxt1"><a href="#javascript:void(0)">파이널 블레이드, 5월 대규모 업데이트 진행</a></td>
+						<td class="txtname">NC지기</td>
+						</tr>
+						
+						<tr>
+						<td class="pagenum">7</td>
+						<td>2017.05.30</td>
+						<td class="tdtxt1"><a href="#javascript:void(0)">프로야구 H2, ‘07년도 선수 추가 업데이트</a></td>
+						<td class="txtname">NC지기</td>
+						</tr>
+						
+						</table>
+
+						<ul class="newsnavv">
+						<li><a href="#javascript:void(0)"  class="arrow1"></a></li>
+						<li class="active"><a href="#javascript:void(0)" class="boardnumb"onclick="boardnumb(1);">1</a></li>
+						<li><a href="#javascript:void(0)" class="boardnumb"onclick="boardnumb(2);">2</a></li>
+						<li><a href="#javascript:void(0)" class="boardnumb"onclick="boardnumb(3);">3</a></li>
+						<li><a href="#javascript:void(0)" class="boardnumb"onclick="boardnumb(4);">4</a></li>
+						<li><a href="#javascript:void(0)" class="boardnumb"onclick="boardnumb(5);">5</a></li>
+						<li><a href="#javascript:void(0)" class="arrow2"></a></li>
+						</ul>
+						
+						<script>
+				function boardnumb(num){ 
+						var f = $('.newsnavv').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.newsnavv0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.newsnavv' + i ).hide();
+						}}}
+						
+						
+				</script>
+						
+					</div>
+					
+					<div class="blog">
+					
+						<p class="blogtxxt">NC블로그<a href="http://blog.ncsoft.com/"  target="_blank" title="NC블로그로"><img src="./img/sub/sub5blog.png" /></a></p>
+							
+							<div class="blogvideo">
+								<video id="vide"  src="./img/sub/sub5lineagemov.mp4" poster="./img/sub/sub5lineagemov.png">
+								</video>
+								
+								<p id="product" type="button" onclick="vid_play_pause()" ><img src="./img/sub/sub5movbtn.png" /></p> 						
+								
+								<script> function vid_play_pause(){
+								var vide = document.getElementById("vide"); 
+								if (vide.paused) { vide.play(); 
+								} else {
+								vide.pause(); } }
+								
+								
+								
+								</script>
+								
+								
+							</div>
+							
+							<div class="blogfoot">
+								<dl>
+									<dt><img src="./img/sub/blogfootbg.png" /></dt>
+									<dd><a href="http://blog.ncsoft.com/?p=4353"  target="_blank"><span>2015 Flagship 입사자 인터뷰</span><br />5가지 유형으로 만나 본 2015 신규 입사자
+									일 잘하고 똑 부러지는 안영이, 느믈느믈 사람 좋은 한석율, 최고 스팩을 자랑하는 장백기, 노력만큼은 ‘새빠시 신상’인 장그래…팀장님이 선호하는 인턴은 어떤 유형일까 ...</a></dd>
+								</dl>
+								
+								<dl>
+									<dt><img src="./img/sub/blogfootbg2.png" /></dt>
+									<dd><a href="http://blog.ncsoft.com/?p=28082" target="_blank"><span>언제 어디서나, 게임</span><br />지하철을 이용하는 대부분의 승객들은 스마트폰으로 게임을 즐긴다. 스마트폰 이용자 수가 2015년 9월 기준으로 4천만 명을 넘어섰고, 하루 지하철 이용 승객이 서울에만 800만 명이라고 하니, 지하철에서 스마트...</a></dd>
+								</dl>
+							</div>
+						 
+					</div>
+					
+					
+					
+			</div><!--//tabs, contentsinner -->
+			
+		</section><!--//sub5contents-->
+		
+		<script>
+			new CBPFWTabs( document.getElementById( 'tabs' ) );
+		</script>
+		
+		<script>
+		window.onload = function(){
+	setTimeout (function(){
+	scrollTo(0,0);}, 100);
+	}
+	</script>
+	
+	
+		<section id="footer"><!--footer-->
+				<div class="footerinner">
+					<dl>
+						<dd class="ser"><a href="https://cs.plaync.com/" target="_blank" title="고객센터">고객센터</a></dd>
+						<dd class="cs"><a href="http://kr.ncsoft.com/korean/support/service.aspx" target="_blank"  title="게임관련문의">게임관련문의처</a></dd>
+						<dd class="pri"><a href="#" onclick="window.open('http://kr.ncsoft.com/korean/popup/privacy/privacy151216.aspx','new','resizable=nowidth=500 height=550');return false" title="개인정보처리방침">개인정보처리방침</a></dd>
+						<dd class="youtube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/yousns.png" /></a></dd>
+						<dd class="twiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/twisns.png" /></a></dd>
+						<dd class="facebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/facesns.png" /></a></dd>
+						
+						<dd class="mbyoutube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/mbyousns.png" /></a></dd>
+						<dd class="mbtwiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/mbtwisns.png" /></a></dd>
+						<dd class="mbfacebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/mbfacesns.png" /></a></dd>
+						
+						<dd class="footerlogo"><img src="./img/common/footerlogo.png"  alt="하단로고"/></dd>
+						<dd class="footerlogo2"><img src="./img/common/tb_logo2.png" alt="footerplaynclogo2" /></dd>
+						<dd class="footermblogo2"><a href="http://www.plaync.com/"><img src="./img/common/mb_logo2.png" alt="footerplaynclogo2" /></a></dd>
+						<dd class="address"><address>(주)엔씨소프트 경기도 성남시 분당구 대왕판교로 644번길 12 (우)13494 대표 김택진<br class="tbspace" />사업자등록번호114-85-04244 통신판매업신고 제2013-경기성남-1268호</address><p>Copyright&copy;NCSOFT Corporation. All Right Reserved.</p></dd>
+					</dl>
+					
+					<!--메뉴구성-->
+					<dl id="sample" class="dropdown">
+						<dt class="drop"><a href="javascript:void(0)"><img src="./img/common/drop.png" /></a></dt>
+						<dd class="dropmenu">
+							<ul class="dropline">
+								<li><a href="http://www.ncsoft.co.kr/" target="_blank">NCSOFT 한국 본사</a></li>
+								<li><a href="http://us.ncsoft.com/" target="_blank">NCSOFT West (US)</a></li>
+								<li><a href="http://eu.ncsoft.com/en-gb/" target="_blank">NCSOFT West (EU)</a></li>
+								<li><a href="http://www.arena.net/" target="_blank">ArenaNet</a></li>
+								<li><a href="http://www.nctaiwan.com/" target="_blank">NC Taiwan</a></li>
+								<li><a href="http://www.ncjapan.co.jp/" target="_blank">NC Japan</a></li>
+							</ul>
+						</dd>
+					
+					</dl>
+					<!--메뉴구성-->
+					</div>
+				</section><!--//footer-->
+	</main>
+</body>
+</html>

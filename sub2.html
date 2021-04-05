@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>NCSOFT 서비스소개</title>
+<meta charset="utf-8">
+<meta name="robots" content="index,flow">
+<meta name="title" content="NCSOFT">
+<meta name="description" content="NCSOFT소개,엔씨소프트소개,NCSOFT,엔씨소프트,게임 개발 및 서비스업체">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="./img/common/logo.ico" />
+<link rel="stylesheet" href="./css/import.css" />
+<link rel="stylesheet" href="./css/subcommon.css" />
+<!--스크롤움직임-->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<!--드롭다운메뉴-->
+<script type="text/javascript" src="./js/jquery.selectDrop.js"></script>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- Swiper JS -->
+<script src="./js/swiper.min.js"></script>
+<!--tabs-->
+<script type="text/javascript" src="./js/cbpFWTabs.js"></script>
+
+
+<!--스크롤움직임-->
+<script type="text/javascript">
+$(function() { 
+    function swing() { 
+        $('.top').animate({'bottom':'130px'},900).animate({'bottom':'190px'},900, swing); 
+    } 
+    swing(); 
+});
+
+</script>
+
+
+</head>
+
+<body  onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
+	<main>
+	<header><!--nav-->
+			<div class="inner"><!--inner-->
+			<h1 class="PC"><a href="index.html" title="NCSOFT LOGO"><img src="./img/common/logo1.png" alt="logo" /></a></h1>
+			<h1 class="mobile"><a href="index.html" title="MOBILE NCSOFT LOGO"><img src="./img/common/mobilelogo1.png" alt="logo" /></a></h1>
+			
+			<section class="nav_tab">
+				<ul class="navtbul">
+						<li class="navgation"><a href="sub.html" onclick="subtab_menu(0);">기업소개</a></li>
+						<li  class="navgation active"><a href="sub2.html"onclick="subtab_menu(1);">서비스소개</a></li>
+						<li  class="navgation"><a href="sub3.html"onclick="subtab_menu(2);">인재채용</a></li>
+						<li  class="navgation"><a href="sub4.html"onclick="subtab_menu(3);">사회공헌</a></li>
+						<li  class="navgation"><a href="sub5.html"onclick="subtab_menu(4);">홍보채널</a></li>
+						<li class="login"><a href="login.html" title="로그인">로그인</a></li>
+						<li class="logo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+				</ul>
+			</section>
+				
+				<script>
+				function subtab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}
+				</script>
+				
+			</div><!--inner-->
+		</header><!--//nav-->
+	<!--햄버거 메뉴 시작-->
+			<div id="qnb" >
+					<nav id="menu" class="left">
+					  <ul>
+							<li><a href="sub.html">기업소개</a></li>
+						<li><a href="sub2.html">서비스소개</a></li>
+						<li><a href="sub3.html">인재채용</a></li>
+						<li><a href="sub4.html">사회공헌</a></li>
+						<li><a href="sub5.html">홍보채널</a></li>
+						<li class="qnblogin"><a href="login.html" title="로그인"><img src="./img/common/login_bt1.png" onmouseover="this.src='./img/common/login_btov.png'" onmouseout="this.src='./img/common/login_bt1.png'" border="0"></a>
+						</li>
+						<li class="qnblogo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+					  </ul>
+					<a href="#" id="showmenu"><img src="./img/common/qna.png" class="imgg"/><i class="fa fa-align-justify"></i> </a> </nav>
+				</div>
+				<!--햄버거 제이쿼리-->
+					<script>
+							$("#showmenu").click(function(e){
+								e.preventDefault();
+								$("#menu").toggleClass("show");
+							});
+							
+
+				
+					</script>
+			
+
+			
+			<script>
+						//상단 내비게이션 클릭시 처리하는 부분
+						var swiper = new Swiper('.cate_layer');
+
+						function goSlide(index){
+						swiper.slideTo(index, 1000, true);
+						}
+						
+						$('.imgg').on({ 
+							'click': function() { 
+								 var src = ($(this).attr('src') === './img/common/qna.png') 
+									? './img/common/closebtn.png'
+									: './img/common/qna.png'; 
+								 $(this).attr('src', src); 
+							} 
+						});
+						
+						
+						/*function tab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}*/
+						</script>
+			<!--햄버거 메뉴 종료-->	
+	
+		<div class="top">
+			<div class="topbg"><a href="#" class="topText"><img src="./img/sub/topbg.png" alt="topbg" /></a></div>
+			<script>
+					$( '.topText' ).click( function() {
+					  $( 'html, body' ).animate( { scrollTop : 0 }, 0 );
+					  return false;
+					} );
+					/*a href="javascript:scrollUp()"
+					var scrollUpDelay = 1;
+					var scrollUpSpeed = 30;//위로 올라가는 속도, 숫자가 클수록 빨라짐
+					function scrollUp()
+					{
+					if(document.body.scrollTop<1)
+					{
+					return;
+					}
+					document.body.scrollTop=document.body.scrollTop-scrollUpSpeed;
+					setTimeout('scrollUp()',scrollUpDelay);
+					}*/
+					</script>
+		</div>
+		
+		<section id="sub2visual"><!--sub2visual-->
+		</section><!--//sub2visual-->
+		
+		<section id="sub2contents"><!--sub2contents-->
+		
+			<div id="tabs" class="sub2contentsinner">
+				<nav class="toppbox">
+					<ul class="sub2textbox">
+						<li><a href="#section-1 javascript:void(0)">전체서비스</a></li>
+						<li><a href="#section-2 javascript:void(0)">MMORPG</a></li>
+						<li><a href="#section-3 javascript:void(0)">캐주얼게임</a></li>
+						<li><a href="#section-4 javascript:void(0)">모바일</a></li>
+					</ul>
+				</nav>
+				
+				<div class="content">
+				<div class="sub2banner"><!--가로스와이퍼-->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide bnr1"><a href="http://rk.plaync.com/" target="_blank"><img src="./img/sub/bannerbg1.png" alt="banner1" /></a></div>
+						<div class="swiper-slide bnr1"><a href="https://lineagem.plaync.com/?LM=20000" target="_blank"><img src="./img/sub/bannerbg2.png" alt="banner2" /></a></div>
+					</div>
+					
+						 <!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						
+						<!-- Initialize Swiper -->
+						<script>
+							var swiper = new Swiper('.sub2banner', {
+							pagination: '.swiper-pagination',
+							paginationClickable: true,
+							  autoplay: 3000, //1000=1초
+							  autoplayDisableOnInteraction: false,
+							spaceBetween:0,
+							effect: 'fade'
+						});
+						</script>
+			
+				</div><!--//가로스와이퍼-->
+				
+					<section id="section-1"><!--section-1-->
+				
+				<div class="services"><!--services-->
+				
+				<div class="PCgame">
+					<div class="MMORPG"><!--MMORPG-->
+					
+						<dl class="gil1">
+							<dt class="gil1text">길드워1</dt>
+							<dd class="gil1bg"><img src="./img/sub/gil1.png" /></dd>
+						</dl>
+						
+						<dl class="gil2">
+							<dt class="gil2text">길드워2</dt>
+							<dd class="gil2bg"><img src="./img/sub/gil2.png" /></dd>
+						</dl>
+						
+						<dl class="blade">
+							<dt class="bladetext">블레이드&소울</dt>
+							<dd class="bladebg"><img src="./img/sub/blade.png" /></dd>
+						</dl>
+						
+						<dl class="lineage">
+							<dt class="lineagetext">리니지</dt>
+							<dd class="lineagebg"><img src="./img/sub/leneage.png" /></dd>
+						</dl>
+						
+						<dl class="lineage2">
+							<dt class="lineage2text">리니지2</dt>
+							<dd class="lineage2bg"><img src="./img/sub/leneage2.png" /></dd>
+						</dl>
+						
+						<dl class="lineageit">
+							<dt class="lineageittext">리니지 이터널</dt>
+							<dd class="lineageitbg"><img src="./img/sub/leneageit.png" /></dd>
+						</dl>
+						
+						<dl class="aion">
+							<dt class="aiontext">아이온</dt>
+							<dd class="aionbg"><img src="./img/sub/aion.png" /></dd>
+						</dl>
+						
+						<dl class="wildstar">
+							<dt class="wildstartext">와일드스타</dt>
+							<dd class="wildstarbg"><img src="./img/sub/wildstar.png" /></dd>
+						</dl>
+					
+					</div><!--//MMORPG-->
+				
+					<div class="casualgame"><!--casual-->
+					
+						<dl class="MXM">
+							<dt class="MXMtext">MXM</dt>
+							<dd class="MXMbg"><img src="./img/sub/mxm.png" /></dd>
+						</dl>
+						
+						<dl class="lovebeat">
+							<dt class="lovebeattext">러브비트</dt>
+							<dd class="lovebeatbg"><img src="./img/sub/lovebeate.png" /></dd>
+						</dl>
+						
+						<dl class="freerice">
+							<dt class="freericetext">프리라이스</dt>
+							<dd class="freericebg"><img src="./img/sub/freerice.png" /></dd>
+						</dl>
+						
+					</div><!--//casual-->
+				</div>	
+				
+					<div class="mobilegame"><!--mobile-->
+						
+						<dl class="mbleneage">
+							<dt class="mbleneagetext">리니지M</dt>
+							<dd class="mbleneagebh"><img src="./img/sub/mbleneage.png" /></dd>
+						</dl>
+						
+						<dl class="mbleneage2">
+							<dt class="mbleneage2text">리니지헤이스트</dt>
+							<dd class="mbleneagebg"><img src="./img/sub/mbleneage2.png" /></dd>
+						</dl>
+						
+						<dl class="mbleneage3">
+							<dt class="mbleneage3text">리니지(앱)</dt>
+							<dd class="mbleneage3bg"><img src="./img/sub/mbleneage3.png" /></dd>
+						</dl>
+						
+						<dl class="mbleneage4">
+							<dt class="mbleneage4text">리니지헤이스트</dt>
+							<dd class="mbleneage4bg"><img src="./img/sub/mbleneage4.png" /></dd>
+						</dl>
+				
+						<dl class="mbaion">
+							<dt class="mbaiontext">아이온</dt>
+							<dd class="mbaionbg"><img src="./img/sub/mbaion.png" /></dd>
+						</dl>
+						
+						<dl class="mbblade">
+							<dt class="mbbladetext">블레이드&소울</dt>
+							<dd class="mbbladebg"><img src="./img/sub/mbblade.png" /></dd>
+						</dl>
+						
+						<dl class="mbfinal">
+							<dt class="mbfinaltext">파이널블레이드</dt>
+							<dd class="mbfinalbg"><img src="./img/sub/mbfinal.png" /></dd>
+						</dl>
+						
+						<dl class="mbleneagered">
+							<dt class="mbleneageredtext">리니지레드나이츠</dt>
+							<dd class="mbleneageredbg"><img src="./img/sub/mbleneagered.png" /></dd>
+						</dl>
+						
+						<dl class="mbhunters">
+							<dt class="mbhunterstext">헌터스어드벤처</dt>
+							<dd class="mbhuntersbg"><img src="./img/sub/mbhunters.png" /></dd>
+						</dl>
+						
+						<dl class="mbh2">
+							<dt class="mbh2text">프로야구H2</dt>
+							<dd class="mbh2bg"><img src="./img/sub/mbh2.png" /></dd>
+						</dl>
+						
+						<dl class="mbcomix">
+							<dt class="mbcomixtext">엔씨코믹스</dt>
+							<dd class="mbcomixbg"><img src="./img/sub/mbcomix.png" /></dd>
+						</dl>
+						
+						<dl class="mbcat">
+							<dt class="mbcattext">CAT메신저</dt>
+							<dd class="mbcatbg"><img src="./img/sub/mbcats.png" /></dd>
+						</dl>
+						
+						<dl class="mbbuff">
+							<dt class="mbbufftext">버프</dt>
+							<dd class="mbbuffbg"><img src="./img/sub/mbbuff.png" /></dd>
+						</dl>
+					
+					</div><!--//mobile-->
+					
+				</div><!--//services-->
+				</section><!--//section-1-->
+					<section id="section-2"><!--section-2-->
+				<div class="MMORPG"><!--MMORPG-->
+					
+						<dl class="gil1">
+							<dt class="gil1text">길드워1</dt>
+							<dd class="gil1bg"><img src="./img/sub/gil1.png" /></dd>
+						</dl>
+						
+						<dl class="gil2">
+							<dt class="gil2text">길드워2</dt>
+							<dd class="gil2bg"><img src="./img/sub/gil2.png" /></dd>
+						</dl>
+						
+						<dl class="blade">
+							<dt class="bladetext">블레이드&소울</dt>
+							<dd class="bladebg"><img src="./img/sub/blade.png" /></dd>
+						</dl>
+						
+						<dl class="lineage">
+							<dt class="lineagetext">리니지</dt>
+							<dd class="lineagebg"><img src="./img/sub/leneage.png" /></dd>
+						</dl>
+						
+						<dl class="lineage2">
+							<dt class="lineage2text">리니지2</dt>
+							<dd class="lineage2bg"><img src="./img/sub/leneage2.png" /></dd>
+						</dl>
+						
+						<dl class="lineageit">
+							<dt class="lineageittext">리니지 이터널</dt>
+							<dd class="lineageitbg"><img src="./img/sub/leneageit.png" /></dd>
+						</dl>
+						
+						<dl class="aion">
+							<dt class="aiontext">아이온</dt>
+							<dd class="aionbg"><img src="./img/sub/aion.png" /></dd>
+						</dl>
+						
+						<dl class="wildstar">
+							<dt class="wildstartext">와일드스타</dt>
+							<dd class="wildstarbg"><img src="./img/sub/wildstar.png" /></dd>
+						</dl>
+					
+					</div><!--//MMORPG-->
+				</section><!--section-2-->
+					<section id="section-3"><!--section-3-->
+					<div class="casualgame"><!--casual-->
+					
+						<dl class="MXM">
+							<dt class="MXMtext">MXM</dt>
+							<dd class="MXMbg"><img src="./img/sub/mxm.png" /></dd>
+						</dl>
+						
+						<dl class="lovebeat">
+							<dt class="lovebeattext">러브비트</dt>
+							<dd class="lovebeatbg"><img src="./img/sub/lovebeate.png" /></dd>
+						</dl>
+						
+						<dl class="freerice">
+							<dt class="freericetext">프리라이스</dt>
+							<dd class="freericebg"><img src="./img/sub/freerice.png" /></dd>
+						</dl>
+						
+					</div><!--//casual-->
+				</section><!--//section-3-->
+					<section id="section-4"><!--section-4-->
+					<div class="mobilegame"><!--mobile-->
+						
+						<dl class="mbleneage">
+							<dt class="mbleneagetext">리니지M</dt>
+							<dd class="mbleneagebh"><img src="./img/sub/mbleneage.png" /></dd>
+						</dl>
+						
+						<dl class="mbleneage2">
+							<dt class="mbleneage2text">리니지헤이스트</dt>
+							<dd class="mbleneagebg"><img src="./img/sub/mbleneage2.png" /></dd>
+						</dl>
+						
+						<dl class="mbleneage3">
+							<dt class="mbleneage3text">리니지(앱)</dt>
+							<dd class="mbleneage3bg"><img src="./img/sub/mbleneage3.png" /></dd>
+						</dl>
+						
+						<dl class="mbleneage4">
+							<dt class="mbleneage4text">리니지헤이스트</dt>
+							<dd class="mbleneage4bg"><img src="./img/sub/mbleneage4.png" /></dd>
+						</dl>
+				
+						<dl class="mbaion">
+							<dt class="mbaiontext">아이온</dt>
+							<dd class="mbaionbg"><img src="./img/sub/mbaion.png" /></dd>
+						</dl>
+						
+						<dl class="mbblade">
+							<dt class="mbbladetext">블레이드&소울</dt>
+							<dd class="mbbladebg"><img src="./img/sub/mbblade.png" /></dd>
+						</dl>
+						
+						<dl class="mbfinal">
+							<dt class="mbfinaltext">파이널블레이드</dt>
+							<dd class="mbfinalbg"><img src="./img/sub/mbfinal.png" /></dd>
+						</dl>
+						
+						<dl class="mbleneagered">
+							<dt class="mbleneageredtext">리니지레드나이츠</dt>
+							<dd class="mbleneageredbg"><img src="./img/sub/mbleneagered.png" /></dd>
+						</dl>
+						
+						<dl class="mbhunters">
+							<dt class="mbhunterstext">헌터스어드벤처</dt>
+							<dd class="mbhuntersbg"><img src="./img/sub/mbhunters.png" /></dd>
+						</dl>
+						
+						<dl class="mbh2">
+							<dt class="mbh2text">프로야구H2</dt>
+							<dd class="mbh2bg"><img src="./img/sub/mbh2.png" /></dd>
+						</dl>
+						
+						<dl class="mbcomix">
+							<dt class="mbcomixtext">엔씨코믹스</dt>
+							<dd class="mbcomixbg"><img src="./img/sub/mbcomix.png" /></dd>
+						</dl>
+						
+						<dl class="mbcat">
+							<dt class="mbcattext">CAT메신저</dt>
+							<dd class="mbcatbg"><img src="./img/sub/mbcats.png" /></dd>
+						</dl>
+						
+						<dl class="mbbuff">
+							<dt class="mbbufftext">버프</dt>
+							<dd class="mbbuffbg"><img src="./img/sub/mbbuff.png" /></dd>
+						</dl>
+					
+					</div><!--//mobile-->
+				</section><!--//section-4-->
+				
+				</div><!--//content -->
+			</div><!--//tabs, contentsinner -->
+		</section><!--//sub2contents-->
+		
+	
+		<script>
+			new CBPFWTabs( document.getElementById( 'tabs' ) );
+		</script>
+	
+	<script>
+		window.onload = function(){
+	setTimeout (function(){
+	scrollTo(0,0);}, 100);
+	}
+	</script>
+	
+		<section id="footer"><!--footer-->
+				<div class="footerinner">
+					<dl>
+						<dd class="ser"><a href="https://cs.plaync.com/" target="_blank" title="고객센터">고객센터</a></dd>
+						<dd class="cs"><a href="http://kr.ncsoft.com/korean/support/service.aspx" target="_blank"  title="게임관련문의">게임관련문의처</a></dd>
+						<dd class="pri"><a href="#" onclick="window.open('http://kr.ncsoft.com/korean/popup/privacy/privacy151216.aspx','new','resizable=no width=1000 height=1000');return false" title="개인정보처리방침">개인정보처리방침</a></dd>
+						<dd class="youtube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/yousns.png" /></a></dd>
+						<dd class="twiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/twisns.png" /></a></dd>
+						<dd class="facebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/facesns.png" /></a></dd>
+						
+						<dd class="mbyoutube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/mbyousns.png" /></a></dd>
+						<dd class="mbtwiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/mbtwisns.png" /></a></dd>
+						<dd class="mbfacebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/mbfacesns.png" /></a></dd>
+						
+						<dd class="footerlogo"><img src="./img/common/footerlogo.png"  alt="하단로고"/></dd>
+						<dd class="footerlogo2"><img src="./img/common/tb_logo2.png" alt="footerplaynclogo2" /></dd>
+						<dd class="footermblogo2"><a href="http://www.plaync.com/"><img src="./img/common/mb_logo2.png" alt="footerplaynclogo2" /></a></dd>
+						<dd class="address"><address>(주)엔씨소프트 경기도 성남시 분당구 대왕판교로 644번길 12 (우)13494 대표 김택진<br class="tbspace" />사업자등록번호114-85-04244 통신판매업신고 제2013-경기성남-1268호</address><p>Copyright&copy;NCSOFT Corporation. All Right Reserved.</p></dd>
+					</dl>
+					
+					<!--메뉴구성-->
+					<dl id="sample" class="dropdown">
+						<dt class="drop"><a href="javascript:void(0)"><img src="./img/common/drop.png" /></a></dt>
+						<dd class="dropmenu">
+							<ul class="dropline">
+								<li><a href="http://www.ncsoft.co.kr/" target="_blank">NCSOFT 한국 본사</a></li>
+								<li><a href="http://us.ncsoft.com/" target="_blank">NCSOFT West (US)</a></li>
+								<li><a href="http://eu.ncsoft.com/en-gb/" target="_blank">NCSOFT West (EU)</a></li>
+								<li><a href="http://www.arena.net/" target="_blank">ArenaNet</a></li>
+								<li><a href="http://www.nctaiwan.com/" target="_blank">NC Taiwan</a></li>
+								<li><a href="http://www.ncjapan.co.jp/" target="_blank">NC Japan</a></li>
+							</ul>
+						</dd>
+					
+					</dl>
+					<!--메뉴구성-->
+					</div>
+				</section><!--//footer-->
+	</main>
+</body>
+</html>

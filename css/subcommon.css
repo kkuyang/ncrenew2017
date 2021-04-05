@@ -1,0 +1,1105 @@
+/*common.css(main-sub까지) - 공통인 부분(예:상단과 하단)*/
+@font-face {
+ font-family: 'NanumSquareL';
+ src: url(../font/NanumSquareL.eot);
+ src: url(../font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquareL.woff) format('woff'),
+      url(../font/NanumSquareL.ttf) format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumSquareB';
+ src: url(../font/NanumSquareB.eot);
+ src: url(../font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquareB.woff) format('woff'),
+      url(../font/NanumSquareB.ttf) format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumSquareR';
+ src: url(../font/NanumSquareR.eot);
+ src: url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquareR.woff) format('woff'),
+      url(../font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+ font-family: 'notokr-light';
+ src: url(../font/notokr-light.eot);
+ src: url(../font/notokr-light.eot?#iefix) format('embedded-opentype'),
+      url(../font/notokr-light.woff) format('woff'),
+      url(../font/notokr-light.ttf) format('truetype');
+}
+
+@font-face {
+ font-family: 'notokr-regular';
+ src: url(../font/notokr-regular.eot);
+ src: url(../font/notokr-regular.eot?#iefix) format('embedded-opentype'),
+      url(../font/notokr-regular.woff) format('woff'),
+      url(../font/notokr-regular.ttf) format('truetype');
+}
+
+html,body,main{height:100%;} /*높이 %적용되도록 하기 위해서*/
+
+body{background:#000; }
+header .inner{width:80%; height:100%;margin:0 auto; min-height:10px; border:0px solid yellow; position:relative;}/*%인지 픽셀인지 판단 할 것*/
+
+/*상단영역*/
+
+header{
+	border:0px solid red;
+	width:100%; 
+	height:105px;
+	background-color:rgba(31,50,99,0.5);
+	position:absolute;
+	
+}
+
+.inner  h1.PC  img{
+	border:0px solid blue;  
+	display:inline-block;
+	margin-top:28px;
+}
+
+.inner  h1.mobile, #qnb{
+	display:none;
+}
+.nav_tab{
+	border:0px solid red;
+	position:relative;
+	float:right;
+	position:absolute;
+	top:35px;
+	right:0;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.nav_tab li{
+	display:inline-block;
+	border:0px solid red;	
+}
+
+.navgation a{
+	border:0px solid black; 
+	padding-right:40px;
+	font-family:'NanumSquareB'; 
+	font-family:'NanumSquareB'; 
+	color:#fff;
+	font-size:25px;
+	
+}
+
+
+.nav_tab li a:hover{
+	color:#ffea00;
+}
+.nav_tab li.active a{
+	color:#ffea00;
+}
+
+.login{
+	border:0px solid red;	
+	display:inline-block;
+
+}
+.login a{
+	border:0px solid pink; 
+	width:66px;
+	height:28px;
+	background:url(../img/common/login_bt.png) no-repeat center top;
+	font-family:'NanumSquareB'; 
+	color:#fff;
+	font-size:16px; 
+	padding-top:8px;
+	display:inline-block;
+	text-align:center;
+	
+}
+
+.logo2 img{
+	border:0px solid red; 
+	padding-left:15px;
+}
+
+/*하단영역*/
+
+
+#footer{
+	background:#000;
+	width:100%;
+	height:130px;
+	clear:both;
+	padding-top:50px;
+}
+
+.footerinner{
+	width:80%;
+	height:100%;
+	margin:0 auto;
+	border:0px solid red;
+	position:relative;
+}
+
+.footerinner dl{
+	border-top:1px solid #333;
+}
+
+.footerinner a{
+	color:#fff;
+	font-family: 'NanumSquareL';
+	font-size:14px;
+	border:0px solid red;
+}
+
+.footerinner dd.ser{
+	border:0px solid red;
+	float:left;
+	margin:24px 36px 0 0;
+}
+
+.footerinner dd.cs{
+	border:0px solid red;
+	float:left;
+	margin:24px 36px 0 0;
+}
+
+.footerinner dd.pri{
+	border:0px solid red;
+	float:left;
+	margin-top:24px;
+}
+
+.footerinner .footerlogo{
+	border:0px solid red;
+	position:absolute;
+	top:65px;
+}
+
+
+.footerlogo2, .footermblogo2{
+	display:none;
+}
+
+.footerinner .address{
+	color:#fff;
+	font-family: 'NanumSquareL';
+	font-size:14px;
+	border:0px solid red;
+}
+
+.address address{
+	text-align:center;
+	border:0px solid pink;
+	margin-top:70px;
+	 cursor:default;	  
+}
+
+.tbspace{
+	display:none;
+}
+
+.address p{
+	padding-top:10px;
+	text-align:center;
+	 cursor:default;	  
+}
+
+.footerinner dd.facebook{
+	float:right;
+	margin:14px 5px 0 0;	
+}
+
+.footerinner dd.twiter{
+	float:right;
+	margin-top:14px;
+}
+
+.footerinner dd.youtube{
+	float:right;
+	margin:14px 0 0 5px;
+}
+
+.footerinner dd.mbfacebook, .footerinner dd.mbtwiter, .footerinner dd.mbyoutube{
+	display:none;
+}
+
+
+/*셀렉트 메뉴 스타일*/
+
+.footerinner  .dropdown{
+	border:0px solid red; 
+	position:absolute;
+	right:120px;
+	top:20px;
+}
+.footerinner  .dropdown dd, .dropdown dt, .dropdown ul {
+	margin:0px; 
+	padding:0px; 
+}
+.footerinner  .dropdown dd { 
+	position:relative; 
+
+}
+
+.footerinner .dropdown a, .dropdown a:visited { 
+	font-family:'NanumSquareR';
+	color:#747474;              /*기본 메뉴 텍스트 색상*/
+	text-decoration:none; 
+	outline:none;
+}
+.footerinner .dropdown a:hover {
+	color:#000;              /*마우스 오버시 메뉴 색상*/
+	font-family:'NanumSquareB';
+}
+
+.footerinner  .dropdown dt a:hover {
+	color:#000;              /*마우스 오버시 최초 첫번째 메뉴 색상*/
+	
+}
+
+.footerinner .dropdown dt a span {
+	cursor:pointer; 
+	display:block; 
+	padding:5px;
+}
+
+.footerinner .dropdown dd ul { 
+	background:#fff none repeat scroll 0 0;    /*드롭 메뉴 배경 지정*/
+	border:1px solid #747474;                        /*드롭 메뉴 테두리 색상 및 두께*/  
+	display:none;
+	left:0px;
+	padding:5px 0px;
+	position:absolute;
+	bottom:26px;
+	width:auto;
+	min-width:159px;    /*드롭메뉴 가로폭*/
+	list-style:none;
+	
+}
+
+.footerinner .dropdown dd ul li a { padding:5px; display:block;}
+.footerinner  .dropdown dd ul li a:hover { background-color:#ddd;}
+
+.footerinner .dropdown img.flag { border:none; vertical-align:middle; margin-left:10px; }
+
+.footerinner .visibility { display:none;}
+/************************반응형 시작***********************/
+
+@media all and (min-width: 1280px)  and (max-width: 1499px) {/*해상도 조건으로 1439로*/
+
+
+header .inner{width:90%;}/*%인지 픽셀인지 판단 할 것*/
+	
+.footerinner{
+	width:90%;
+	height:auto;
+	margin:0 auto;
+	border:0px solid red;
+}
+
+.address address{
+	text-align:right;
+}
+
+}
+
+@media all and (min-width:800px) and (max-width:1279px){
+header .navtbul, .login, .logo2, .footerlogo, .footerinner .footerlogo2{ display:none;}
+
+.inner  h1.PC  {
+	text-align:center;
+}
+
+.inner  h1.PC  img{
+	margin:15px;
+}
+
+header .inner{
+	width:100%;
+	border:0px solid red;
+	position:relative;
+}
+
+header{
+	height:80px;
+}
+
+main{
+	height:auto;
+		position:relative;
+}
+
+#qnb{
+
+	display:block;
+	border:0px solid red;
+}
+
+/*햄버거 메뉴*/
+#qnb nav#menu {
+	position:absolute;
+	top:0;
+	padding-top:70px;
+	color: #fff;
+	z-index:1000;
+	width:280px;
+	height:100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-sizing:border-box;
+ background:rgba(24,41,75,0.9);
+}
+
+#qnb nav#menu ul {
+	width:200px;
+	padding-left:30px;
+}
+
+#qnb nav#menu ul li{
+	border-bottom:1px solid #ddd;
+	margin-bottom:10px;
+	
+}
+
+#qnb nav#menu ul li:nth-child(5){
+	margin-bottom:20px;
+	
+}
+
+#qnb nav#menu ul li:nth-child(6){
+	border-bottom:0px;
+}
+
+#qnb nav#menu ul li:nth-child(7){
+	border-bottom:0px;
+}
+
+
+#qnb nav#menu ul li a {
+  color: inherit;
+    font-family: 'notokr-regular';
+  font-size: 20px;
+  display: block;
+  padding: 10px 0 8px 0;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+}
+
+#qnb nav#menu ul a i {
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 3px;
+  width: 20px;
+}
+
+#qnb nav#menu ul a i[class*='fa-caret'] { float: right; }
+
+#qnb nav#menu ul a:hover{
+  color: #ffea00;;
+}
+
+
+
+/* Submenu */
+
+#qnb nav#menu ul li a.active+ul { display: block }
+
+#qnb nav#menu ul li ul {
+  margin-top: 0;
+  display: none;
+}
+
+#qnb nav#menu ul li ul li { border-bottom: none; }
+
+#qnb nav#menu ul li ul li a { padding-left: 30px; }
+
+#qnb nav#menu ul li ul li a:hover { background-color: #fff; }
+
+/* /Submenu */
+
+
+/* Cuando este a la Izq, para esconderlo posicionarlo a la Izq a -width */
+
+#qnb nav.left { left: -280px; }
+
+#qnb nav.show { left: 0; }
+
+#qnb nav#menu #showmenu img{
+  margin-left: 100%;
+  position: absolute;
+  top:5px;
+  padding:10px 10px 7px 20px;
+  /*font-size: 2.2em;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border:0px solid red;*/
+}
+
+
+
+#footer{
+	height:13.59vh;
+}
+.footerinner{
+	width:92.2%;
+	border:0px solid red;
+}
+
+
+.footerinner .address{
+	color:#fff;
+	font-family: 'NanumSquareL';
+	font-size:1.09vw;
+	border:0px solid red;
+}
+
+/*.footerinner .footerlogo2{
+	display:block;
+	float:right;
+	margin:2vw 1vw 0 0;
+}*/
+
+.address address{
+	text-align:right;
+}
+
+.address p{
+	margin-top:1vh; 
+}
+
+}
+
+@media all and (min-width:600px) and (max-width:799px){
+header .navtbul, .login, .logo2, .footerlogo, #sample, .address address, .footerinner dd.facebook, .footerinner dd.twiter, .footerinner dd.youtube, .footerlogo2, header .inner #qnb .cate_layer ul .qnblogo2{ display:none;}
+
+header .inner{
+	width:100%;
+	border:0px solid red;
+	position:relative;
+}
+
+header{
+	height:80px;
+}
+
+.inner .PC{
+	border:0px solid red;
+	text-align:center;
+}
+
+.inner  h1.PC  img{
+	margin:15px;
+}
+main{
+	height:auto;
+		position:relative;
+}
+#qnb{
+	display:block;
+	border:0px solid red;
+}
+
+/*햄버거 메뉴*/
+#qnb nav#menu {
+	position:absolute;
+	top:0;
+	padding-top:70px;
+	color: #fff;
+	z-index:1000;
+	width:280px;
+	height:100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-sizing:border-box;
+ background:rgba(24,41,75,0.9);
+}
+
+#qnb nav#menu ul {
+	width:200px;
+	padding-left:30px;
+}
+
+#qnb nav#menu ul li{
+	border-bottom:1px solid #ddd;
+	margin-bottom:10px;
+	
+}
+
+#qnb nav#menu ul li:nth-child(5){
+	margin-bottom:20px;
+	
+}
+
+#qnb nav#menu ul li:nth-child(6){
+	border-bottom:0px;
+
+}
+
+#qnb nav#menu ul li:nth-child(7){
+	border-bottom:0px;
+}
+
+
+#qnb nav#menu ul li a {
+  color: inherit;
+    font-family: 'notokr-regular';
+  font-size: 20px;
+  display: block;
+  padding: 10px 0 8px 0;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+}
+
+#qnb nav#menu ul a i {
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 3px;
+  width: 20px;
+}
+
+#qnb nav#menu ul a i[class*='fa-caret'] { float: right; }
+
+#qnb nav#menu ul a:hover{
+  color: #ffea00;;
+}
+
+
+
+/* Submenu */
+
+#qnb nav#menu ul li a.active+ul { display: block }
+
+#qnb nav#menu ul li ul {
+  margin-top: 0;
+  display: none;
+}
+
+#qnb nav#menu ul li ul li { border-bottom: none; }
+
+#qnb nav#menu ul li ul li a { padding-left: 30px; }
+
+#qnb nav#menu ul li ul li a:hover { background-color: #fff; }
+
+/* /Submenu */
+
+
+/* Cuando este a la Izq, para esconderlo posicionarlo a la Izq a -width */
+
+#qnb nav.left { left: -280px; }
+
+#qnb nav.show { left: 0; }
+
+#qnb nav#menu #showmenu img{
+  margin-left: 100%;
+  position: absolute;
+  top:5px;
+  padding:10px 10px 7px 20px;
+  /*font-size: 2.2em;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border:0px solid red;*/
+}
+
+
+#footer{
+		height:10.5vw;
+}
+
+.footerinner{
+	width:92.2%;
+	border:0px solid red;
+}
+
+
+
+.footermblogo2{
+	display:block;
+	float:right;
+	margin:1vh 1vh 0 0;
+}
+
+.footerinner dd.mbfacebook{
+	display:block;
+	float:right;
+	margin:1vh 1vh 0 0;	
+}
+
+.footerinner dd.mbtwiter{
+	display:block;
+	float:right;
+	margin-top:1vh;
+}
+
+.footerinner dd.mbyoutube{
+	display:block;
+	float:right;
+	margin:1vh 0 0 1vh;
+}
+
+.footerinner dd.ser{
+	margin: 1vh 3vh 0 0;
+}
+
+.footerinner dd.cs{
+	margin: 1vh 3vh 0 0;
+}
+
+.footerinner dd.pri{
+	margin: 1vh 0 0 0;
+}
+
+.footerinner dd.ser a{
+	font-size:1.75vw;
+}
+
+.footerinner dd.cs a{
+	font-size:1.75vw;
+}
+
+.footerinner dd.pri a{
+	font-size:1.75vw;
+}
+
+.address p{
+	font-size:1.75vw;
+	margin:5.7vh auto;
+	
+}
+.tbspace{
+	display:block;
+}
+
+}
+
+@media all and (min-width:480px) and (max-width:599px){
+		header .navtbul, .login, .logo2, .footerlogo, #sample, .footerinner dd.facebook, .footerinner dd.twiter, .footerinner dd.youtube, .address address, .inner  .PC, header .inner #qnb .cate_layer ul .qnblogo2{ display:none;}
+
+header .inner{
+	width:100%;
+	border:0px solid red;
+	position:relative;
+}
+
+header{
+	height:80px;
+}
+
+.inner h1.mobile{
+	display:block;
+	text-align:center;
+}
+
+.inner h1.mobile img{
+	margin-top:15px;
+}
+
+main{
+	height:auto;
+		position:relative;
+}
+#qnb{
+
+	display:block;
+	border:0px solid red;
+}
+/*햄버거 메뉴*/
+#qnb nav#menu {
+	position:absolute;
+	top:0;
+	padding-top:70px;
+	color: #fff;
+	z-index:1000;
+	width:280px;
+	height:100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-sizing:border-box;
+ background:rgba(24,41,75,0.9);
+}
+
+#qnb nav#menu ul {
+	width:200px;
+	padding-left:30px;
+}
+
+#qnb nav#menu ul li{
+	border-bottom:1px solid #ddd;
+	margin-bottom:10px;
+	
+}
+
+#qnb nav#menu ul li:nth-child(5){
+	margin-bottom:20px;
+	
+}
+
+#qnb nav#menu ul li:nth-child(6){
+	border-bottom:0px;
+}
+
+#qnb nav#menu ul li:nth-child(7){
+	border-bottom:0px;
+}
+
+
+#qnb nav#menu ul li a {
+  color: inherit;
+    font-family: 'notokr-regular';
+  font-size: 20px;
+  display: block;
+  padding: 10px 0 8px 0;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+}
+
+#qnb nav#menu ul a i {
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 3px;
+  width: 20px;
+}
+
+#qnb nav#menu ul a i[class*='fa-caret'] { float: right; }
+
+#qnb nav#menu ul a:hover{
+  color: #ffea00;;
+}
+
+
+
+/* Submenu */
+
+#qnb nav#menu ul li a.active+ul { display: block }
+
+#qnb nav#menu ul li ul {
+  margin-top: 0;
+  display: none;
+}
+
+#qnb nav#menu ul li ul li { border-bottom: none; }
+
+#qnb nav#menu ul li ul li a { padding-left: 30px; }
+
+#qnb nav#menu ul li ul li a:hover { background-color: #fff; }
+
+/* /Submenu */
+
+
+/* Cuando este a la Izq, para esconderlo posicionarlo a la Izq a -width */
+
+#qnb nav.left { left: -280px; }
+
+#qnb nav.show { left: 0; }
+
+#qnb nav#menu #showmenu img{
+  margin-left: 100%;
+  position: absolute;
+  top:3px;
+  padding:10px 10px 7px 20px;
+  /*font-size: 2.2em;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border:0px solid red;*/
+}
+
+
+
+#footer{
+	height:13vw;
+}
+
+.footerinner{
+	width:92.2%;
+	border:0px solid red;
+}
+
+.footermblogo2{
+	display:block;
+	float:right;
+	margin:1vh 1vh 0 0;
+	border:0px solid red;
+}
+
+.footerinner dd.mbfacebook{
+	display:block;
+	float:right;
+	margin:1vh 1vh 0 0;	
+}
+
+.footerinner dd.mbtwiter{
+	display:block;
+	float:right;
+	margin-top:1vh;
+}
+
+.footerinner dd.mbyoutube{
+	display:block;
+	float:right;
+	margin:1vh 0 0 1vh;
+}
+
+.footerinner dd.ser{
+	margin: 1vh 3vh 0 0;
+}
+
+.footerinner dd.cs{
+	margin: 1vh 3vh 0 0;
+}
+
+.footerinner dd.pri{
+	margin: 1vh 0 0 0;
+}
+
+.footerinner dd.ser a{
+	font-size:1.75vw;
+}
+
+.footerinner dd.cs a{
+	font-size:1.75vw;
+}
+
+.footerinner dd.pri a{
+	font-size:1.75vw;
+}
+
+.address{
+	text-align:center;
+}
+
+.address p{
+	font-size:1.75vw;
+	margin-top:3.8vh; 
+}
+	
+}
+
+
+
+@media all and (max-width:479px){
+		header .navtbul, .login, .logo2, .footerlogo, #sample, .footerinner dd.facebook, .footerinner dd.twiter, .footerinner dd.youtube,  .inner  .PC,.address address,  header .inner #qnb .cate_layer ul .qnblogo2{ display:none;}
+
+
+header .inner{
+	width:100%;
+	border:0px solid red;
+	position:relative;
+}
+
+header{
+	height:70px;
+}
+
+.inner h1.mobile{
+	display:block;
+	text-align:center;
+}
+
+.inner h1.mobile img{
+	margin-top:15px;
+}
+
+main{
+	height:auto;
+		position:relative;
+}
+
+
+#qnb{
+	display:block;
+	
+}
+/*햄버거 메뉴*/
+#qnb nav#menu {
+	position:absolute;
+	top:0;
+	padding-top:70px;
+	color: #fff;
+	z-index:1000;
+	width:280px;
+	height:100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-sizing:border-box;
+ background:rgba(24,41,75,0.9);
+}
+
+#qnb nav#menu ul {
+	width:200px;
+	padding-left:30px;
+}
+
+#qnb nav#menu ul li{
+	border-bottom:1px solid #ddd;
+	margin-bottom:10px;
+	
+}
+
+#qnb nav#menu ul li:nth-child(5){
+	margin-bottom:20px;
+	
+}
+
+#qnb nav#menu ul li:nth-child(6){
+	border-bottom:0px;
+}
+
+#qnb nav#menu ul li:nth-child(7){
+	border-bottom:0px;
+}
+
+
+#qnb nav#menu ul li a {
+  color: inherit;
+    font-family: 'notokr-regular';
+  font-size: 20px;
+  display: block;
+  padding: 10px 0 8px 0;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+}
+
+#qnb nav#menu ul a i {
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 3px;
+  width: 20px;
+}
+
+#qnb nav#menu ul a i[class*='fa-caret'] { float: right; }
+
+#qnb nav#menu ul a:hover{
+  color: #ffea00;;
+}
+
+
+
+/* Submenu */
+
+#qnb nav#menu ul li a.active+ul { display: block }
+
+#qnb nav#menu ul li ul {
+  margin-top: 0;
+  display: none;
+}
+
+#qnb nav#menu ul li ul li { border-bottom: none; }
+
+#qnb nav#menu ul li ul li a { padding-left: 30px; }
+
+#qnb nav#menu ul li ul li a:hover { background-color: #fff; }
+
+/* /Submenu */
+
+
+/* Cuando este a la Izq, para esconderlo posicionarlo a la Izq a -width */
+
+#qnb nav.left { left: -280px; }
+
+#qnb nav.show { left: 0; }
+
+#qnb nav#menu #showmenu img{
+  margin-left: 100%;
+  position: absolute;
+  top:3px;
+  padding:10px 10px 7px 20px;
+  /*font-size: 2.2em;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border:0px solid red;*/
+}
+
+
+#footer{
+	height:13vw;
+}
+
+.footerinner{
+	width:92.2%;
+	border:0px solid red;
+}
+
+.footermblogo2{
+	display:block;
+	position:absolute;
+	top:1vh;
+	right:13.5vw;
+}
+
+.footerinner dd.mbfacebook{
+	display:block;
+	float:right;
+	margin:1vh 0.2vh 0 0;	
+}
+
+.footerinner dd.mbtwiter{
+	display:block;
+	float:right;
+	margin-top:1vh;
+}
+
+.footerinner dd.mbyoutube{
+	display:block;
+	float:right;
+	margin:1vh 0 0 0.2vh;
+}
+
+.footerinner dd.ser{
+	margin: 1vh 3vh 0 0;
+}
+
+.footerinner dd.cs{
+	margin: 1vh 3vh 0 0;
+}
+
+.footerinner dd.pri{
+	margin: 1vh 0 0 0;
+}
+
+.footerinner dd.ser a{
+	font-size:1.75vw;
+}
+
+.footerinner dd.cs a{
+	font-size:1.75vw;
+}
+
+.footerinner dd.pri a{
+	font-size:1.75vw;
+}
+
+.address p{
+	font-size:1.75vw;
+	margin-top:3.8vh; 
+}
+.tbspace{
+	display:block;
+}
+
+}
+
+

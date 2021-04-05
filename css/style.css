@@ -1,0 +1,3311 @@
+/*style.css(main-sub까지) - 공통이 아닌 부분*/
+
+section#visual{
+	width:100%;
+	height:100%;
+}/* 높이값 100%은 임시로 설정해 둠 ->px인지 %인지 판단하여 작업 */
+
+
+.swiper-container {
+ 	width:100%;
+ 	height:100%;
+ 	border:0px solid red;
+  }
+  
+  .move{
+	  border:0px solid red;
+	  z-index:100; 
+	  position:absolute;
+	  left:50%;
+	  bottom:45px;
+	width:20px;
+	border:3px solid rgba(255,255,255,0.7);
+	height:34px;
+	border-radius:12px;
+}
+  
+  .move span{
+	position:absolute;
+	left:50%;
+	top:6px;
+	margin-left:-2px;
+	width:4px;
+	height:6px;
+	background:rgba(255,255,255,0.7);
+	border-radius:3px;
+
+}
+  
+  .movetext{
+
+	   font-family: 'NanumSquareL';
+	   font-size:14px;
+	  color:rgba(255,255,255,0.7);
+	  position:absolute;
+	  left:49.4%; 
+	  bottom:45px; 
+	  z-index:100; 
+	  cursor:default;	
+  }
+  
+.swiper-slide {
+		border:0px solid blue;
+		/*width:100%;
+		height:100%;*/
+		
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+		
+		  -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        -webkit-justify-content: left;
+		
+         justify-content: left;
+        -webkit-box-align: left;
+        -ms-flex-align: left;
+		
+        -webkit-align-items: center;
+        align-items: center;
+       /* -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;*/
+
+    }
+
+
+.visual_bg {position:absolute; top:0; z-index:5; width:100%; height:100%;}
+.visual_bg ul li{width:100%; height:100%;position:absolute; top:0; left:0}
+
+
+section#visual .banner1{
+	background:url(../img/main/NC_mainPC_visual_1.png) no-repeat center top;
+		background-size:cover;
+}
+
+section#visual .banner2{
+	background:url(../img/main/NC_mainPC_visual_2.png) no-repeat center top;
+	background-size:cover;
+}
+
+section#visual .banner3{
+	background:url(../img/main/NC_mainPC_visual_3.png) no-repeat center top;
+	background-size:cover;
+}
+
+section#visual .bg01 img{
+	width:25%;
+	margin:45vh 0 0 50vh;
+}
+
+section#visual .bg02 img{
+	width:25%;
+	margin:38vh 0 0 70vh;
+}
+
+section#visual .bg03 img{
+	width:30%;
+	margin:35vh 0 0 80vh;
+}
+
+section#visual .bg012 img, section#visual .bg021 img, section#visual .bg031 img{
+	display:none;
+}
+
+section#visual .textbox{
+	width:921px;
+	height:445px;
+	border:0px solid red;
+	margin:0 auto;
+}
+
+.textbox dl{
+	font-family:'notokr-regular';
+	color:#fff;
+	text-align:center;
+	font-size:35px;
+	line-height:135%;
+	cursor:default;
+}
+
+.text1{
+	margin-top:150px;
+}
+
+.text2{
+	margin-top:150px;
+}
+
+.text3{
+	margin-top:80px;
+}
+
+.text4{
+	margin-top:118px;
+}
+
+.text5{
+	margin-top:150px;
+}
+
+.more{
+		margin-top:50px;
+}
+.more a{
+	border:3px solid rgba(255,255,255,0.7);
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	padding:1% 5% 1% 5%;
+	font-size:24px;
+	color:rgba(255,255,255,0.7);
+	position:relative;
+	z-index:1100;
+
+}
+
+.more a:hover{
+	border:3px solid rgba(255,255,255,1);
+	color:rgba(255,255,255,1);
+}
+
+
+section#visual .bg1{
+	background:url(../img/main/NC_mainPC_bg1.png) no-repeat center top;
+	background-size:cover; /*css3 속성*/
+}
+
+section#visual .textbox1{
+	background:url(../img/main/textbox.png)no-repeat center top;
+	background-size:cover;
+
+}
+
+section#visual .bg2{
+	background:url(../img/main/NC_mainPC_bg2.png) no-repeat center top;
+	background-size:cover;
+}
+
+section#visual .bg2 img{ 
+	max-width: 100%;
+    max-height: 100%;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:1100;
+}
+
+
+section#visual .textbox2{
+	background:url(../img/main/textbox.png)no-repeat center top;
+	background-size:cover;
+}
+
+
+
+section#visual .bg3{
+	background:url(../img/main/NC_mainPC_bg3.png) no-repeat center top;
+	background-size:cover;
+}
+
+section#visual .textbox3{
+	background:url(../img/main/textbox.png)no-repeat center top;
+	background-size:cover;
+
+}
+
+section#visual .bg4{
+	background:url(../img/main/NC_mainPC_bg4.png) no-repeat center top;
+	background-size:cover;
+}
+
+section#visual .textbox4{
+	background:url(../img/main/textbox.png)no-repeat center top;
+	background-size:cover;
+
+}
+
+section#visual .bg5{
+	background:url(../img/main/NC_mainPC_bg5.png) no-repeat center top;
+	background-size:cover;
+}
+
+section#visual .textbox5{
+	background:url(../img/main/textbox.png)no-repeat center top;
+	background-size:cover;
+	
+}
+/*****MAIN끝******/
+
+
+
+/************************MAIN반응형 시작***********************/
+
+@media all and (min-width:800px) and (max-width:1279px){
+
+
+	  .move{
+
+	  position:absolute;
+	  left:51%;
+
+}
+  
+  .movetext{
+
+	  position:absolute;
+	  left:50%; 
+	
+  }
+	
+section#visual .banner1{
+	background:url(../img/main/TBLETimg1_3.png) no-repeat center top;
+		background-size:cover;
+}
+
+
+section#visual .banner2{
+	background:url(../img/main/TBLETimg1_2.png) no-repeat center top;
+	background-size:cover;
+}
+
+
+
+section#visual .banner3{
+	background:url(../img/main/TBLETimg1.png) no-repeat center top;
+	background-size:cover;
+}
+
+
+ 
+section#visual .bg01 img{
+	width:40%;
+	
+	margin:45vh 0 0 30vh;
+}
+
+
+section#visual .bg02 img{
+	width:40%;
+	margin:38vh 0 0 30vh;
+}
+
+section#visual .bg03 img{
+	width:50%;
+	margin:35vh 0 0 30vh;
+}
+
+
+section#visual .textbox{
+	width:72vw;
+	height:34.79vw;
+	border:0px solid red;
+	margin:0 auto;
+}
+
+.textbox dl{
+	font-family:'notokr-regular';
+	color:#fff;
+	text-align:center;
+	font-size:2.73vw;
+	line-height:135%;
+	cursor:default;
+}
+
+.text1{
+	margin-top:11.72vw;
+}
+
+.text2{
+	margin-top:11.72vw;
+}
+
+.text3{
+	margin-top:6.25vw;
+}
+
+.text4{
+	margin-top:9.22vw;
+}
+
+.text5{
+	margin-top:11.72vw;
+}
+
+.more{
+		margin-top:3.9vw;
+}
+
+.more a{
+	border:2px solid rgba(255,255,255,0.7);
+	-webkit-border-radius: 0.78vw 0.78vw 0.78vw 0.78vw;
+	border-radius: 0.78vw 0.78vw 0.78vw 0.78vw;
+	font-size:1.87vw;
+
+}
+
+.more a:hover{
+	border:2px solid rgba(255,255,255,1);
+	color:rgba(255,255,255,1);
+}
+
+}
+
+
+@media all and (min-width:600px) and (max-width:799px) {
+	
+	  section#visual .bg2 img{display:none;}
+	section#visual .banner1{
+	background:url(../img/main/TBLETimg1_3.png) no-repeat center top;
+		background-size:cover;
+}
+
+
+section#visual .banner2{
+	background:url(../img/main/TBLETimg1_2.png) no-repeat center top;
+	background-size:cover;
+}
+
+
+
+section#visual .banner3{
+	background:url(../img/main/TBLETimg1.png) no-repeat center top;
+	background-size:cover;
+}
+
+
+
+section#visual .bg01 img{
+	width:39.54vw;
+	height:10.38vw;
+	margin:45vh 0 0 30vh;
+}
+
+section#visual .bg02 img{
+	width:32.04vw;
+	height:9.38vw;
+	margin:38vh 0 0 30vh;
+}
+
+section#visual .bg03 img{
+	width:54.19vw;
+	height:28.28vw;
+	margin:50vh 0 0 30vh;
+}
+
+section#visual .bg2{
+	background:url(../img/main/NC_mainPC_bg2_13.png) no-repeat center top;
+	background-size:cover;
+}
+  
+  .move{
+	  border:0px solid red;
+	  z-index:100; 
+	  position:absolute;
+	  left:46%;
+
+	width:20px;
+	border:2px solid rgba(255,255,255,0.7);
+	height:34px;
+	border-radius:12px;
+}
+  
+  
+  .movetext{
+	   font-family: 'NanumSquareL';
+	   font-size:14px;
+	  color:rgba(255,255,255,0.7);
+	  position:absolute;
+	  left:44.3%; 
+	  z-index:100; 
+	  cursor:default;	  
+  }
+	
+
+  section#visual .textbox{
+	width:72vw;
+	height:34.79vw;
+	border:0px solid red;
+	margin:0 auto;
+}
+
+.textbox dl{
+	font-family:'notokr-regular';
+	color:#fff;
+	text-align:center;
+	font-size:3.5vw;
+	line-height:135%;
+	cursor:default;
+}
+
+.text1{
+	margin-top:11.72vw;
+}
+
+.text2{
+	margin-top:11.72vw;
+}
+
+.text3{
+	margin-top:6.25vw;
+}
+
+.text4{
+	margin-top:9.22vw;
+}
+
+.text5{
+	margin-top:11.72vw;
+}
+
+.more{
+		margin-top:2.5vw;
+}
+
+
+.more a{
+	border:2px solid rgba(255,255,255,0.5);
+	font-size:14px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	border-radius: 7px 7px 7px 7px;
+	padding:1% 5% 1% 5%;
+	color:rgba(255,255,255,0.5);
+}
+
+.more a:hover{
+	border:2px solid rgba(255,255,255,1);
+	color:rgba(255,255,255,1);
+}
+
+}
+
+
+
+@media all and (min-width:480px) and (max-width:599px){
+
+ section#visual .bg2 img{display:none;}
+ 
+section#visual .bg2{
+	background:url(../img/main/TBLETimg3.png) no-repeat center top;
+	background-size:cover;
+}
+
+
+section#visual .bg01 img{
+	width:39.54vw;
+	height:10.38vw;
+	margin:45vh 0 0 20vh;
+}
+
+section#visual .bg02 img{
+	width:32.04vw;
+	height:9.38vw;
+	margin:38vh 0 0 50vh;
+}
+
+section#visual .bg03 img{
+	width:54.19vw;
+	height:28.28vw;
+	margin:50vh 0 0 30vh;
+}
+
+
+  
+  .move{
+	  border:0px solid red;
+	  z-index:100; 
+	  position:absolute;
+	  left:46%;
+
+	width:20px;
+	border:2px solid rgba(255,255,255,0.7);
+	height:34px;
+	border-radius:12px;
+}
+  
+  
+  .movetext{
+	   font-family: 'NanumSquareL';
+	   font-size:14px;
+	  color:rgba(255,255,255,0.7);
+	  position:absolute;
+	  left:44.3%; 
+	  z-index:100; 
+	  cursor:default;	  
+  }
+	
+
+  section#visual .textbox{
+	width:72vw;
+	height:34.79vw;
+	border:0px solid red;
+	margin:0 auto;
+}
+
+.textbox dl{
+	font-family:'notokr-regular';
+	color:#fff;
+	text-align:center;
+	font-size:3.5vw;
+	line-height:135%;
+	cursor:default;
+}
+
+.text1{
+	margin-top:11.72vw;
+}
+
+.text2{
+	margin-top:11.72vw;
+}
+
+.text3{
+	margin-top:6.25vw;
+}
+
+.text4{
+	margin-top:9.22vw;
+}
+
+.text5{
+	margin-top:11.72vw;
+}
+
+.more{
+		margin-top:2.5vw;
+}
+
+.more a{
+	border:2px solid rgba(255,255,255,0.7);
+	-webkit-border-radius: 0.78vw 0.78vw 0.78vw 0.78vw;
+	border-radius: 0.78vw 0.78vw 0.78vw 0.78vw;
+	font-size:1.87vw;
+
+}
+
+.more a{
+	border:2px solid rgba(255,255,255,0.5);
+	font-size:14px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	border-radius: 7px 7px 7px 7px;
+	padding:1% 5% 1% 5%;
+	color:rgba(255,255,255,0.5);
+}
+
+.more a:hover{
+	border:2px solid rgba(255,255,255,1);
+	color:rgba(255,255,255,1);
+}
+
+
+}
+
+@media all and (max-width:479px){
+	
+	section#visual .bg01 img, section#visual .bg02 img, section#visual .bg03 img{display:none;}
+
+	 .move{
+	  position:absolute;
+	  left:45.5%;
+	  border:2px solid rgba(255,255,255,0.7);
+	  	border-radius:12px;
+
+}
+  
+  .movetext{
+	  position:absolute;
+	  left:44%; 
+	  font-size:12px;
+	
+  }
+  
+  section#visual .banner1{
+	background:url(../img/main/TBLETimg1_3.png) no-repeat center top;
+		background-size:cover;
+}
+
+section#visual .bg012 img{
+	display:block;
+	position:absolute;
+	top:45%;
+	left:10%;
+}
+
+section#visual .banner2{
+	background:url(../img/main/TBLETimg1_2.png) no-repeat center top;
+	background-size:cover;
+}
+
+section#visual .bg021 img{
+	display:block;
+	position:absolute;
+	top:40%;
+	left:25%;
+}
+
+section#visual .banner3{
+	background:url(../img/main/TBLETimg1.png) no-repeat center top;
+	background-size:cover;
+}
+
+section#visual .bg031 img{
+	display:block;
+	position:absolute;
+	top:40%;
+	right:0;
+}
+
+ section#visual .bg2 img{display:none;}
+ 
+section#visual .bg2{
+	background:url(../img/main/TBLETimg3.png) no-repeat center top;
+	background-size:cover;
+}
+
+  section#visual .textbox{
+	width:72vw;
+	height:34.79vw;
+	border:0px solid red;
+	margin:0 auto;
+}
+
+.textbox dl{
+	font-family:'notokr-regular';
+	color:#fff;
+	text-align:center;
+	font-size:3vw;
+	line-height:135%;
+	cursor:default;
+}
+
+.text1{
+	margin-top:11.72vw;
+}
+
+.text2{
+	margin-top:11.72vw;
+}
+
+.text3{
+	margin-top:6.25vw;
+}
+
+.text4{
+	margin-top:9.22vw;
+}
+
+.text5{
+	margin-top:11.72vw;
+}
+
+.more{
+		margin-top:3.9vw;
+}
+
+.more a{
+	border:2px solid rgba(255,255,255,0.7);
+	-webkit-border-radius: 0.78vw 0.78vw 0.78vw 0.78vw;
+	border-radius: 0.78vw 0.78vw 0.78vw 0.78vw;
+	font-size:1.87vw;
+
+}
+
+.more a{
+	border:2px solid rgba(255,255,255,0.5);
+	font-size:12px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	border-radius: 7px 7px 7px 7px;
+	padding:1% 5% 1% 5%;
+	color:rgba(255,255,255,0.5);
+}
+
+.more a:hover{
+	border:2px solid rgba(255,255,255,1);
+	color:rgba(255,255,255,1);
+}
+
+
+
+}
+/*************************MAIN반응형끝*********************/
+
+
+
+
+/******************************SUB1시작************************************/
+
+
+#sub1visual{
+	width:100%;
+	height:550px;
+	background:url(../img/sub/sub1visual.png) no-repeat center top;
+}
+
+#sub1contents{
+	width:100%;
+	border:0px solid red;
+}
+
+.sub1contentsinner{
+	width:80%;
+	border:0px solid blue;
+	margin:0 auto;
+}
+
+#section-11{
+	width:1520px;
+}
+
+.topppbox{
+	width:1520px;
+	border:0px solid red;
+	margin-top:100px;
+}
+
+.sub1contentsinner nav {
+	text-align: center;
+}
+
+.sub1contentsinner nav ul {
+	width:100%;
+	height:70px;
+	background:#fff;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	box-sizing:border-box;
+	margin-bottom:50px;
+}
+
+.sub1contentsinner nav ul li {
+	width:24.93%;
+	border-bottom: none;
+	display: block;
+	float: left;
+	font-family:'notokr-regular';
+	font-size:25px;
+	color:#000;
+}
+
+.sub1contentsinner nav li.tab-current {
+	width:25.1%;
+	background:#ffea00;
+	height:70px;
+	color:#000; 
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.sub1contentsinner nav a {
+	border:0px solid red;
+	width:100%;
+	color: #000;
+	display: block;
+	font-size: 25px;
+	padding:20px 0;
+}
+
+.sub1contentsinner nav a:hover {
+		font-weight:bold; 
+	color: #000;
+}
+
+.sub1contentsinner nav li.tab-current a {
+	color: #000;
+}
+/* Content */
+.content section {
+	display: none;
+	width:100%;
+}
+
+.content section:before,
+.content section:after {
+	content: '';
+	display: table;
+}
+
+.content section:after {
+	clear: both;
+}
+
+/* Fallback example */
+
+.content section.content-current {
+	display: block;
+}
+.toptext{
+	color:#fff;
+	width:1520px;
+	border:0px solid red;
+	clear:both;
+}
+
+.toptx{
+	border:0px solid red;
+	width:100%;
+	cursor:default;
+}
+
+.backimg{
+	width:50%;
+	float:left;
+	margin-bottom:50px;
+}
+
+.toptx dl{
+	width:50%;
+	border:0px solid red;
+	float:right;
+	margin-top:35px;
+}
+
+.toptx dt{
+	font-family:'notokr-regular';
+	font-size:28px;
+	margin-bottom:50px;
+
+}
+.toptx dd{
+	font-family:'notokr-light';
+	font-size:20px;
+	margin-bottom:50px;
+	line-height:30px;
+
+}
+
+.toptext table{
+	float:right;
+	text-align:left;
+	margin-right:13%;
+	border:0px solid red;
+	cursor:default;
+}
+
+.toptext tr{
+	line-height:35px;
+}
+
+.toptext th{
+	font-size:20px;
+	padding-right:30px;
+}
+
+.toptext td{
+	font-size:18px;
+}
+
+.ncculture{
+	border:0px solid red;
+	width:1520px;
+	color:#fff;
+	background:url(../img/sub/sub1bg2.png) no-repeat right bottom;
+	background-size:42%;
+	clear:both;
+	cursor:default;
+}
+
+.ncculture p{
+	font-size:28px;
+	font-family:'notokr-regular';
+	margin-bottom:50px;
+}
+
+.bold1{
+	font-family:'notokr-regular';
+	font-size:25px;
+	margin-bottom:17px;
+}
+
+.bold{
+	font-family:'notokr-regular';
+	font-size:20px;
+	margin-bottom:8px;
+}
+
+.ncculture dd{
+	font-family:'notokr-light';
+	font-size:18px;
+	line-height:23px;
+}
+
+.nter{
+	margin-bottom:23px;
+}
+
+.extent{
+	margin-bottom:50px;
+}
+
+.extent2{
+	padding-bottom:50px;
+	border:0px solid red;
+}
+
+#section-22{
+	width:1520px;
+	border:0px solid red;
+	color:#fff;
+	cursor:default;
+}
+
+.history{
+	width:100%;
+	clear:both;
+}
+
+.history dl{
+	float:left;
+	width:50%;
+	margin-top:67px;
+	margin-bottom:50px;
+}
+
+.history dt{
+	font-size:28px;
+	margin-bottom:50px;
+	font-family:'notokr-regular';
+}
+
+.history dd{
+	float:left;
+	font-family:'notokr-light';
+	font-size:22px;
+	line-height:40px;
+}
+
+.history p.img{
+	width:50%;
+	border:0px solid red;
+	float:right;
+
+}
+
+.awardbox{
+	width:100%;
+	clear:both;
+}
+.awardbox ul{
+border:0px solid red;
+	width:350px;
+	height:60px;
+	color:#000;
+	background:#fff;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	box-sizing:border-box;
+	margin-bottom:50px;
+}
+
+.awardbox li{
+	display:inline;
+	border:0px solid red;
+	line-height:60px;
+}
+
+
+
+.awardbox1 span{
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	background:#ffea00;
+	padding:12.5px 45px;
+	font-size:25px;
+	font-family:'notokr-regular';
+}
+
+.awardbox a{
+font-size:25px;
+	font-family:'notokr-regular';
+	padding:5px;
+}
+
+.awardbox a:hover{
+	font-weight:bold;
+}
+
+.award{
+	border:0px solid red;
+	clear:both;
+	width:100%;
+	margin-bottom:50px;
+	font-size:20px;
+	font-family:'notokr-light';
+}
+
+.award div{
+	border-bottom:1px solid #fff;
+	margin-bottom:24px;
+}
+
+.award div p:last-child{
+	margin-bottom:24px;
+}
+.award p{
+	margin-top:10px;
+}
+
+.award .spt{
+	margin-left:23px;
+}
+
+.award .sp{
+	margin-left:52px;
+}
+
+#section-33{
+	width:1520px;
+}
+
+#section-33 p{
+	margin-bottom:50px;
+}
+
+#section-44{
+	width:1520px;
+}
+
+.toppppbox{
+	width:1520px;
+	border:0px solid red;
+}
+
+.sub1textboxB{
+	width:100%;
+	height:70px;
+	background:#fff;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	box-sizing:border-box;
+	margin-bottom:50px;
+}
+
+	
+.sub1textboxB li a{
+	float:left;
+	display:block;
+	text-align:center;
+	width:30.7%;
+	padding:20px;
+	border:0px solid red;
+	font-family:'notokr-regular';
+	font-size:/*25px;*/25px;
+	color:#000; 
+
+}
+
+.sub1textboxB li.active a{
+	background-color:#ffea00;
+	color:#000; 
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.sub1textboxB li a:hover{
+	font-weight:bold; 
+}
+
+.signatureS #tab1{
+	cursor:default;
+}
+.signaturebox{
+	width:1520px;
+	border:0px solid red;
+
+}
+
+.signaturebox img{
+	margin-bottom:50px;
+}
+
+.signalogo img{
+	border:0px solid red;
+	width:100%;
+}
+
+.signalogo dd{
+	width:30%;
+	margin-right:5%;
+}
+
+.signalogo dd:nth-child(3){
+	margin-right:0;
+}
+
+.signalogo1{
+	float:left;
+}
+
+.signalogo2{
+	float:left;
+}
+
+.signalogo3{
+	float:left;
+}
+
+.signatextbox{
+	clear:both;
+	width:100%;
+}
+.signatextbox1{
+	width:750px;
+	float:left;
+	color:#fff;
+}
+.signatextbox1 dt{
+	font-family:'notokr-regular';
+	font-size:25px;
+	margin-bottom:17px;
+}
+
+.signatextbox1 dd{
+	font-family:'notokr-light';
+	font-size:20px;
+	border:0px solid red;
+}
+
+.signatextbox2{
+	width:750px;
+	float:right;
+	color:#fff;
+}
+
+.signatextbox2 dt{
+	font-family:'notokr-regular';
+	font-size:25px;
+	margin-bottom:17px;
+}
+
+.signatextbox2 dd{
+	font-family:'notokr-light';
+	font-size:20px;
+	border:0px solid red;
+}
+
+#signaturecolor{
+	clear:both;
+	width:100%;
+}
+
+#signaturecolor div{
+	float:left;
+}
+
+.colortx{
+	font-size:28px;
+	font-family:'notokr-regular';
+	margin-bottom:50px;
+	padding-top:50px;
+	border:0px solid red;
+}
+
+.color{
+	width:1520px;
+	border:1px solid #494949;
+	padding-bottom:24px;
+	margin-bottom:50px;
+	color:#fff;
+}
+
+.color div{
+	margin-left:65px;
+	float:left;
+	/*
+	width:100%;
+	height:50%;
+	*/
+}
+
+.color p{
+	font-family:'notokr-regular';
+	font-size:25px;
+	margin:20px 0 33px 0;
+}
+
+.color dl{
+	font-family:'notokr-light';
+	font-size:20px;
+	width:422px;
+	height:183px;
+	border:0px solid red;
+	position:relative;
+	
+}
+
+.color dd{
+	margin-left:20px;
+}
+
+
+.color dt{
+	font-family:'notokr-light';
+	font-size:50px;
+	padding-top:30px;
+	padding-left:300px;
+}
+
+.color .spc{
+	position:absolute;
+	top:88px;
+	right:20px;
+	border:0px solid red;
+}
+
+.color1 dl{
+	background:#d8b17e;
+	-webkit-text-fill-color: #fff;
+}
+
+.color2 dl{
+	background:#1f3263;
+	-webkit-text-fill-color: #fff;
+}
+
+
+.color3 dl{
+	background:#fff;	
+}
+
+.color4 dl{
+	background:#333333;
+  -webkit-text-fill-color: #fff;
+}
+
+
+.color4 dd:first-child{
+	border:0px solid red;
+	padding-top:70px;
+}
+
+.color5 dl{
+	background:#737373;
+	-webkit-text-fill-color: #fff;
+}
+
+.color5 dd:first-child{
+	border:0px solid red;
+	padding-top:70px;
+}
+
+.color6 dl{
+	background:#A6A6A6;
+	-webkit-text-fill-color: #fff;
+}
+
+.color6 dd:first-child{
+	border:0px solid red;
+	padding-top:70px;
+}
+
+.ratio{
+	width:1520px;
+	border:0px solid red;
+	color:#fff;
+	clear:both;
+}
+
+.ratio p{
+	font-size:28px;
+	font-family:'notokr-regular';
+	margin-bottom:50px;
+}
+
+.rati{
+	width:100%;
+	height:510px;
+	background:url(../img/sub/sub1atio.png) no-repeat center top;
+	font-size:18px;
+	font-family:'notokr-light';
+}
+
+.rati dl{
+	border:0px solid red;
+	text-align:right;
+	margin-right:20px;
+}
+
+.rati dt{
+	padding-top:413px;
+}
+
+#tab2{
+	width:1520px;
+}
+
+#tab2 .tab2logo{
+	margin-top:50px;
+}
+
+#tab3{
+	width:1520px;
+}
+
+/**********************************SUB1끝*********************************/
+
+
+/******************************SUB2시작************************************/
+
+#sub2visual{
+	width:100%;
+	height:550px;
+	background:url(../img/sub/sub2visual.png) no-repeat center top;
+	background-size:cover;
+}
+
+#sub2contents{
+	width:100%;
+	border:0px solid red;
+	position:relative;
+}
+
+.sub2contentsinner{
+	width:80%;
+	border:0px solid blue;
+	margin:0 auto;
+	border:0px solid yellow;
+}
+
+.bnr1 img{
+	max-width:100%;
+}
+
+.toppbox{
+	width:100%;
+	border:0px solid red;
+	margin-top:100px;
+}
+.sub2contentsinner nav {
+	text-align: center;
+}
+
+.sub2contentsinner nav ul {
+	width:100%;
+	height:70px;
+	background:#fff;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	box-sizing:border-box;
+	margin-bottom:50px;
+}
+
+.sub2contentsinner nav ul li {
+	width:24.93%;
+	border-bottom: none;
+	display: block;
+	float: left;
+	
+}
+
+.sub2contentsinner nav li.tab-current {
+	width:25.1%;
+	background:#ffea00;
+	height:70px;
+	color:#000; 
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.sub2contentsinner nav a {
+	width:100%;
+	color: #000;
+	display: block;
+	font-family:'notokr-regular';
+	font-size:25px;
+	color:#000;
+	padding:23px 0;
+}
+
+.sub2contentsinner nav a:hover {
+		font-weight:bold; 
+	color: #000;
+}
+
+.sub2contentsinner nav li.tab-current a {
+	color: #000;
+}
+
+.top{
+	position:fixed;
+	bottom:170px;
+	right:0;
+	z-index:10;
+	border:0px solid blue;
+	width:25%;
+	border:0px solid red;
+}
+
+.top img{
+	border:0px solid red;
+	width:100%;
+}
+
+#section-1 .PCgame dt{
+	font-family:'notokr-regular';
+	font-size:22px;
+	color:#fff; 
+	cursor:default;
+	margin-bottom:17px;
+	margin-top:50px;
+}
+
+#section-1 .PCgame{
+	height:auto;
+	border:0px solid red;
+	clear:both;
+}
+
+#section-1 .PCgame dl{
+border:0px solid red;
+width:32.5%;
+float:left;
+margin-right:1.25%;
+border:0px solid red;
+}
+
+#section-1 .MMORPG dl:nth-child(3){margin-right:0;}
+#section-1 .MMORPG dl:nth-child(6){margin-right:0;}
+#section-1 .casualgame dl:nth-child(1){margin-right:0;}
+
+#section-2 dt{
+	margin-top:50px;
+}
+
+#section-2 dt{
+	font-family:'notokr-regular';
+	font-size:22px;
+	color:#fff; 
+	cursor:default;
+	margin-bottom:17px;
+}
+
+#section-2{
+	height:auto;
+	border:0px solid red;
+	clear:both;
+}
+
+#section-2 dl{
+border:0px solid red;
+width:32.5%;
+float:left;
+margin-right:1.25%;
+border:0px solid red;
+}
+
+#section-2 .MMORPG dl:nth-child(3){margin-right:0;}
+#section-2 .MMORPG dl:nth-child(6){margin-right:0;}
+
+
+#section-3 dt{
+	margin-top:50px;
+}
+
+#section-3 dt{
+	margin-top:50px;
+}
+
+#section-3 dt{
+	font-family:'notokr-regular';
+	font-size:22px;
+	color:#fff; 
+	cursor:default;
+	margin-bottom:17px;
+}
+
+#section-3{
+	height:auto;
+	border:0px solid red;
+	clear:both;
+}
+
+#section-3 dl{
+border:0px solid red;
+width:32.5%;
+float:left;
+margin-right:1.25%;
+border:0px solid red;
+}
+
+#section-3 .casualgame dl:nth-child(3){margin-right:0;}
+
+
+#section-3 dt{
+	margin-top:50px;
+}
+
+#section-4 dt{
+	margin-top:50px;
+}
+
+.services dd img{
+	border:0px solid red;
+	max-width:100%;
+}
+
+.mobilegame dt{
+	font-family:'notokr-regular';
+	font-size:22px;
+	color:#fff; 
+	cursor:default;
+	margin-bottom:17px;
+}
+
+.mobilegame{
+	border:0px solid red;
+	clear:both;
+	
+}
+
+#section-1 .mobilegame dl{
+	float:left;
+	width:12.77%;
+	margin-right:1.76%;
+}
+
+#section-1 .mobilegame dl:nth-child(7){margin-right:0;}
+#section-1 .mobilegame dl:nth-child(13){margin-right:0;}
+
+
+#section-4 .mobilegame dl{
+	float:left;
+	width:12.77%;
+	margin-right:1.76%;
+}
+
+#section-4 .mobilegame dl:nth-child(7){margin-right:0;}
+#section-4 .mobilegame dl:nth-child(13){margin-right:0;}
+
+
+.mobilegame dt{
+	text-align:center;
+	margin-top:50px;
+	border:0px solid red;
+}
+
+.mbleneage dt, .mbleneage2 dt, .mbleneage3 dt, .mbleneage4 dt, .mbaion dt, .mbblade dt, .mbfinal dt{
+	margin-top:100px;
+}
+
+/************************sub2반응형 시작***********************/
+
+@media all and (min-width:800px) and (max-width:1279px){
+
+.sub2contentsinner{
+	width:92.2%;
+	border:0px solid blue;
+	margin:0 auto;
+	border:0px solid yellow;
+}
+
+.sub2contentsinner nav ul {
+	width:100%;
+	height:70px;
+	background:#fff;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	box-sizing:border-box;
+	margin-bottom:50px;
+}
+
+.sub2contentsinner nav ul li {
+	width:24.93%;
+	border-bottom: none;
+	display: block;
+	float: left;
+
+}
+
+.sub2contentsinner nav li.tab-current {
+	width:25.1%;
+	background:#ffea00;
+	height:70px;
+	color:#000; 
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.sub2contentsinner nav a {
+	width:100%;
+	color: #000;
+	display: block;
+	font-family:'notokr-regular';
+	font-size:25px;
+	color:#000;
+	padding:23px 0;
+}
+.PCgame dt{
+
+	font-size:2vw;
+
+}
+
+#section-2 dt{
+
+	font-size:2vw;
+
+}
+
+
+#section-3 dt{
+
+	font-size:2vw;
+}
+
+.mobilegame dt{
+
+	font-size:1.5vw;
+
+}
+
+}
+
+
+@media all and (min-width:600px) and (max-width:799px){
+	.sub2contentsinner{
+	width:92.2%;
+	border:0px solid blue;
+	margin:0 auto;
+	border:0px solid yellow;
+}
+.toppbox{
+	margin-top:50px;
+}
+	
+.sub2contentsinner nav ul {
+	width:100%;
+	height:50px;
+	background:#fff;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	box-sizing:border-box;
+	margin-bottom:50px;
+}
+
+.sub2contentsinner nav ul li {
+	width:24.93%;
+	border-bottom: none;
+	display: block;
+	float: left;
+	
+}
+
+.sub2contentsinner nav li.tab-current {
+	width:25.1%;
+	background:#ffea00;
+	height:50px;
+	color:#000; 
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.sub2contentsinner nav a {
+	width:100%;
+	color: #000;
+	display: block;
+	font-family:'notokr-regular';
+	color:#000;
+	font-size: 2.5vw;
+	padding:15px 0;
+}
+
+#section-1 .PCgame dt{
+
+	font-size:3vw;
+
+}
+
+#section-2 dt{
+
+	font-size:3vw;
+
+}
+
+
+#section-3 dt{
+
+	font-size:3vw;
+}
+
+.mobilegame dt{
+
+	font-size:1.5vw;
+
+}
+
+.mbleneage dt, .mbleneage2 dt, .mbleneage3 dt, .mbleneage4 dt, .mbaion dt, .mbblade dt, .mbfinal dt{
+	margin-top:50px;
+}
+
+}
+
+@media all and (min-width:480px) and (max-width:599px){
+	
+	.sub2contentsinner{
+	width:92.2%;
+	border:0px solid blue;
+	margin:0 auto;
+	border:0px solid yellow;
+}
+.toppbox{
+	margin-top:50px;
+}
+	
+.sub2contentsinner nav ul {
+	width:100%;
+	height:50px;
+	background:#fff;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	box-sizing:border-box;
+	margin-bottom:50px;
+}
+
+.sub2contentsinner nav ul li {
+	width:24.93%;
+	border-bottom: none;
+	display: block;
+	float: left;
+	
+}
+
+.sub2contentsinner nav li.tab-current {
+	width:25.1%;
+	background:#ffea00;
+	height:50px;
+	color:#000; 
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.sub2contentsinner nav a {
+	width:100%;
+	color: #000;
+	display: block;
+	font-family:'notokr-regular';
+	color:#000;
+	font-size: 2.5vw;
+	padding:15px 0;
+}
+
+
+
+#section-1 .PCgame dt{
+
+	font-size:2vw;
+
+}
+
+#section-2 dt{
+
+	font-size:2vw;
+
+}
+
+
+#section-3 dt{
+
+	font-size:2vw;
+}
+
+.mobilegame dt{
+
+	font-size:1.44vw;
+
+}
+
+.mbleneage dt, .mbleneage2 dt, .mbleneage3 dt, .mbleneage4 dt, .mbaion dt, .mbblade dt, .mbfinal dt{
+	margin-top:50px;
+}
+
+}
+
+@media all and (max-width:479px){
+	.sub2contentsinner{
+	width:92.2%;
+	border:0px solid blue;
+	margin:0 auto;
+	border:0px solid yellow;
+}
+.top{
+	border:0px solid red;
+	width:35%;
+}
+
+.toppbox{
+	margin-top:50px;
+}
+	
+.sub2contentsinner nav ul {
+	width:100%;
+	height:40px;
+	background:#fff;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	box-sizing:border-box;
+	margin-bottom:50px;
+}
+
+.sub2contentsinner nav ul li {
+	width:24.93%;
+	border-bottom: none;
+	display: block;
+	float: left;
+	
+}
+
+.sub2contentsinner nav li.tab-current {
+	width:25.1%;
+	background:#ffea00;
+	height:40px;
+	color:#000; 
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.sub2contentsinner nav a {
+	width:100%;
+	color: #000;
+	display: block;
+	font-family:'notokr-regular';
+	color:#000;
+	font-size: 4vw;
+	padding:13px 0;
+}
+
+
+#section-1 .PCgame dl{
+border:0px solid red;
+width:49%;
+float:left;
+margin-right:2%;
+border:0px solid red;
+}
+
+#section-1 .MMORPG dl:nth-child(2){margin-right:0;}
+#section-1 .MMORPG dl:nth-child(3){margin-right:2%;}
+#section-1 .MMORPG dl:nth-child(4){margin-right:0;}
+#section-1 .MMORPG dl:nth-child(8){margin-right:0;}
+#section-1 .casualgame dl:nth-child(1){margin-right:2%;}
+#section-1 .casualgame dl:nth-child(2){margin-right:0;}
+#section-1 .casualgame dl:nth-child(3){margin-right:0;}
+
+
+
+#section-2 dl{
+border:0px solid red;
+width:49%;
+float:left;
+margin-right:2%;
+border:0px solid red;
+}
+
+#section-2 .MMORPG dl:nth-child(2){margin-right:0;}
+#section-2 .MMORPG dl:nth-child(3){margin-right:2%;}
+#section-2 .MMORPG dl:nth-child(4){margin-right:0;}
+#section-2 .MMORPG dl:nth-child(8){margin-right:0;}
+
+
+
+
+#section-3 dl{
+border:0px solid red;
+width:49%;
+float:left;
+margin-right:2%;
+border:0px solid red;
+}
+
+#section-3 .casualgame dl:nth-child(1){margin-right:2%;}
+#section-3 .casualgame dl:nth-child(2){margin-right:0;}
+#section-3 .casualgame dl:nth-child(3){margin-right:0;}
+
+
+
+#section-1 .mobilegame dl{
+	float:left;
+	width:45%;
+	margin-right:10%;
+}
+
+#section-1 .mobilegame dl:nth-child(2){margin-right:0;}
+#section-1 .mobilegame dl:nth-child(4){margin-right:0;}
+#section-1 .mobilegame dl:nth-child(6){margin-right:0;}
+#section-1 .mobilegame dl:nth-child(7){margin-right:10%;}
+#section-1 .mobilegame dl:nth-child(8){margin-right:0;}
+#section-1 .mobilegame dl:nth-child(10){margin-right:0;}
+#section-1 .mobilegame dl:nth-child(11){margin-right:10%;}
+#section-1 .mobilegame dl:nth-child(12){margin-right:0;}
+
+#section-4 .mobilegame dl{
+		float:left;
+	width:45%;
+	margin-right:10%;
+}
+
+#section-4 .mobilegame dl:nth-child(2){margin-right:0;}
+#section-4 .mobilegame dl:nth-child(4){margin-right:0;}
+#section-4 .mobilegame dl:nth-child(6){margin-right:0;}
+#section-4 .mobilegame dl:nth-child(7){margin-right:10%;}
+#section-4 .mobilegame dl:nth-child(8){margin-right:0;}
+#section-4 .mobilegame dl:nth-child(10){margin-right:0;}
+#section-4 .mobilegame dl:nth-child(11){margin-right:10%;}
+#section-4 .mobilegame dl:nth-child(12){margin-right:0;}
+
+
+
+#section-1 .PCgame dt{
+
+	font-size:5vw;
+
+}
+
+#section-2 dt{
+
+	font-size:5vw;
+
+}
+
+
+#section-3 dt{
+
+	font-size:5vw;
+}
+
+.mobilegame dt{
+
+	font-size:5vw;
+
+}
+
+.mbleneage dt, .mbleneage2 dt, .mbleneage3 dt, .mbleneage4 dt, .mbaion dt, .mbblade dt, .mbfinal dt{
+	margin-top:50px;
+}
+
+
+}
+
+
+/**********************************SUB2끝*********************************/
+
+/**********************************SUB3시작*********************************/
+
+#sub3visual{
+	width:100%;
+	height:550px;
+	background:url(../img/sub/sub3visual.png) no-repeat center top;
+	background-size:cover;
+}
+
+#sub3contents{
+	width:100%;
+	border:0px solid red;
+
+}
+
+.sub3contentsinner{
+	width:80%;
+	border:0px solid blue;
+	margin:0 auto;
+	border:0px solid yellow;
+}
+
+.sub3topbox{
+	width:1520px;
+	border:0px solid red;
+	margin-top:100px;
+}
+.sub3contentsinner nav {
+	text-align: center;
+}
+
+.sub3contentsinner nav ul {
+	width:100%;
+	height:70px;
+	background:#fff;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	box-sizing:border-box;
+	margin-bottom:50px;
+}
+
+.sub3contentsinner nav ul li {
+	width:33.3%;
+	border-bottom: none;
+	display: block;
+	float: left;
+	font-family:'notokr-regular';
+	font-size:25px;
+	color:#000;
+}
+
+.sub3contentsinner nav li.tab-current {
+	width:33.4%;
+	background:#ffea00;
+	height:70px;
+	color:#000; 
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.sub3contentsinner nav a {
+	width:100%;
+	color: #000;
+	display: block;
+	font-size:25px;
+	padding:20px 0;
+}
+
+.sub3contentsinner nav a:hover {
+		font-weight:bold; 
+		color: #000;
+}
+
+.sub3contentsinner nav li.tab-current a {
+	color: #000;
+}
+
+#section-111{
+	width:1520px;
+	border:0px solid red;
+	color:#fff;
+		cursor:default;
+}
+
+.reward{
+	width:100%;
+	clear:both;
+	border:0px solid red;
+}
+
+.reward p{
+	font-family:'notokr-regular';
+	font-size:28px;
+}
+.reward span{
+	display:inline-block;
+	margin-top:30px;	
+}
+
+.reward dl{
+		margin-top:50px;
+	border:0px solid red;
+	display:inline-block;
+}
+
+.reward dt{
+	width:751px;
+	height:100px;
+	-webkit-border-radius: 120px;
+	border-radius: 120px;
+	background:#fff;
+	color:#000;
+	font-family:'notokr-regular';
+	font-size:28px;
+	margin-bottom:30px;
+}
+
+.reward span.rewrboxtxt{
+	border:0px solid red;
+	width:100%;
+	text-align:center;
+}
+
+.reward dd{
+	margin:0 auto;
+	border:0px solid red;
+	width:650px;
+	font-family:'notokr-light';
+	font-size:25px;
+	margin-bottom:50px;
+	line-height:35px;
+}
+
+.rwrbox2{
+	float:right;
+}
+
+.reward1{
+	width:100%;
+	margin-top:50px;
+}
+
+.reward1 dt{
+	font-family:'notokr-regular';
+	margin-bottom:20px;
+		font-size:25px;
+}
+
+.reward1 dd{
+	font-family:'notokr-light';
+	line-height:40px;
+		font-size:23px;
+}
+
+.reward2{
+	margin-top:50px;
+	width:100%;
+	clear:both;
+}
+
+.reward2 dl.rewrbox{
+		border:0px solid red;
+		margin-bottom:50px;
+}
+
+.reward2 dl.rewrbox dt{
+	margin-right:43px;
+	display:inline-block;
+	width:342px;
+	height:100px;
+	-webkit-border-radius: 120px;
+	border-radius: 120px;
+	background:#fff;
+	color:#000;
+	font-family:'notokr-regular';
+	font-size:28px;
+	border:0px solid red;
+	box-sizing:border-box;
+}
+
+.reward2 dl.rewrbox dt:nth-child(4){
+	margin-right:0;
+	float:right;
+}
+
+.reward2 .rewrbox span{
+	display:block;
+	margin-top:30px;	
+	width:100%;
+	text-align:center;
+}
+
+.reward2 .rewr2{
+	margin-bottom:50px;
+	line-height:40px;
+}
+
+.reward2 .rewr2 dt{
+	font-family:'notokr-regular';
+	font-size:25px;
+}
+
+.reward2 .rewr2 dd{
+	font-family:'notokr-light';
+	font-size:25px;
+}
+
+.reward3{
+	width:100%;
+}
+
+.reward3 p{
+	font-family:'notokr-regular';
+	font-size:28px;
+	margin-bottom:50px;
+}
+.reward3 span{
+	display:inline-block;
+	margin-top:30px;	
+}
+
+.reward3{
+	line-height:40px;
+}
+
+.reward3 dt{
+	font-family:'notokr-regular';
+	font-size:25px;
+}
+
+.reward3 dd{
+	font-family:'notokr-light';
+	font-size:25px;
+	margin-bottom:50px;
+}
+
+.reward3 dd:last-child{
+	margin-bottom:0;
+}
+
+#section-333{
+	width:100%;
+}
+
+#section-333 p{
+	font-family:'notokr-light';
+	font-size:30px;
+	color:#fff;
+	margin-bottom:50px;
+	text-align:center;
+}
+
+/**********************************SUB3끝*********************************/
+
+
+/**********************************SUB4시작*********************************/
+
+#sub4visual{
+	width:100%;
+	height:550px;
+	background:url(../img/sub/sub4visual.png) no-repeat center top;
+	background-size:cover;
+}
+
+#sub4contents{
+	width:100%;
+	border:0px solid red;
+}
+
+.sub4contentsinner{
+	width:1520px;
+	border:0px solid blue;
+	margin:0 auto;
+	color:#fff;
+}
+
+.foundaition{
+	width:100%;
+	margin-top:50px;
+		cursor:default;
+}
+
+.foundaition p{
+	border:0px solid red;
+}
+
+.foundaition span{
+	font-family:'notokr-regular';
+	font-size:28px;
+	display:inline-block;
+	margin-top:160px;
+	margin-right:10px;
+}
+
+.foundaition img{
+	width:10%;
+	 border:0px solid red;
+}
+
+.foundaition dl{
+	margin-top:20px;
+	font-family:'notokr-light';
+	font-size:22px;
+	line-height:40px;
+}
+
+.foundaition dd.indent1{
+	text-indent: -120px;
+        margin-left: 120px;
+}
+
+.foundaition dd.indent2{
+	text-indent: -200px;
+        margin-left: 200px;
+}
+
+.contribution{
+	width:100%;
+	margin-top:50px;
+		cursor:default;
+}
+
+.contribution dl{
+	line-height:36px;
+}
+
+.contribution dt{
+	font-family:'notokr-regular';
+	font-size:28px;
+	margin-bottom:20px;
+}
+
+.contribution dd{
+	font-family:'notokr-light';
+	font-size:22px;
+	
+}
+
+.result{
+	width:100%;
+	margin-top:50px;
+	cursor:default;
+	font-family:'notokr-light';
+	font-size:22px;
+}
+
+.result p{
+		margin-top:50px;
+		line-height:36px;
+}
+
+.result table{
+	border:1px solid #fff;
+	width:645px;
+	height:470px;
+}
+
+.result .year1{
+	border:0px solid red;
+	text-indent:-150px;
+}
+
+.result .year2{
+	text-indent:-90px;
+}
+
+.result tr{
+	line-height:35px;
+}
+
+.result td{
+	height:40px;
+}
+
+.result .year{
+	text-indent:80px;
+}
+
+.result td:nth-child(1){
+	text-indent: 40px;
+}
+
+.result th{
+	padding:30px;
+	text-align:center;
+}
+
+
+.result div:first-child{
+	float:left;
+}
+
+.result div:last-child{
+	float:right;
+}
+
+.chortcut{
+	width:100%;
+	clear:both;
+	cursor:default;
+	border:0px solid red;
+	padding-top:30px;
+}
+
+.chortcut h1{
+	font-weight:normal;
+	font-family:'notokr-regular';
+	font-size:28px;
+}
+
+.chortcut p{
+	text-align:center;
+}
+
+/**********************************SUB4끝*********************************/
+
+/**********************************SUB5시작*********************************/
+
+
+
+#sub5visual{
+	width:100%;
+	height:550px;
+	background:url(../img/sub/sub5visual.png) no-repeat center top;
+	background-size:cover;
+}
+
+#sub5contents{
+	width:100%;
+	border:0px solid red;
+}
+
+.sub5contentsinner{
+	width:1520px;
+	border:0px solid blue;
+	margin:0 auto;
+}
+
+.newsboard{
+	width:100%;
+	margin-top:50px;
+}
+
+.newsboard span{
+	font-family:'notokr-regular';
+
+}
+
+
+
+.newsboard p{
+	font-family:'notokr-regular';
+	font-size:28px;
+	color:#fff;
+	margin-bottom:30px;
+	cursor:default;
+}
+
+.newsboard table{
+	border:0px solid red;
+	width:100%;
+	font-family:'notokr-light';
+	font-size:25px;
+}
+
+.newsboard tr{
+	width:100%;
+		height:70px;
+	display:inline-block;
+	border:0px solid red;
+	-webkit-border-radius: 120px;
+	border-radius: 120px;
+	background:#fff;
+	margin-bottom:22px;
+}
+
+.newsboard th{
+	font-family:'notokr-light';
+	padding:20px 0;
+	border:0px solid red;
+	cursor:default;
+}
+
+.newsboard .newsyear{
+	padding-left:70px;
+}
+
+.newsboard .newstitle{
+	padding-left:630px;
+}
+
+.newsboard  td{
+    padding:20px 0;
+	float:left;
+	margin-left:20px;
+	padding-left:20px;
+		cursor:default;
+}
+
+.newsboard  td.tdtxt a:hover{
+	font-family:'notokr-regular';
+	text-decoration:underline;
+}
+
+.newsboard  td.tdtxt{
+	border:0px solid yellow;
+	width:1275px;
+	display:inline-block;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+		cursor:pointer;
+}
+
+.newsboard ul{
+	text-align:center;
+}
+
+.newsboard ul li{
+	display:inline;
+}
+
+.newsboard ul li a{
+		color:#fff;
+		display:inline-block;
+}
+
+.newsboard ul li a.arrow1{
+	 border-style:solid; 
+	 border-width:10px;
+	border-color:transparent #fff transparent transparent;
+	margin-top:10px;
+
+}
+
+.newsboard ul li a.arrow2{
+	margin-top:10px;
+	border-style:solid;
+	border-width:10px;
+	border-color:transparent transparent transparent #fff;
+}
+
+.newsboard ul li a.arrow1:active{
+border-style:solid;
+	 border-width:10px;
+	border-color:transparent #ffea00 transparent transparent;
+}
+
+.newsboard ul li a.arrow2:active{
+border-style:solid;
+	border-width:10px;
+	border-color:transparent transparent transparent #ffea00;
+}
+
+.newsboard .boardnum{
+	border:0px solid red;
+	width:37px;
+	height:37px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	background:#fff;
+	font-family:'notokr-regular';
+	font-size:20px;
+	color:#000;
+	line-height:38px;
+}
+
+.newsboard ul li.active a.boardnum{
+	background-color:#ffea00;
+}
+/**********************/
+.newsboard2{
+	width:100%;
+	margin-top:50px;
+}
+
+.newsboard2 p{
+	font-family:'notokr-regular';
+	font-size:28px;
+	color:#fff;
+	margin-bottom:30px;
+	cursor:default;
+}
+
+.newsboard2 table{
+	border:0px solid red;
+	width:100%;
+	font-family:'notokr-light';
+	font-size:25px;
+}
+
+.newsboard2 tr{
+	width:100%;
+		height:70px;
+	display:inline-block;
+	border:0px solid red;
+	-webkit-border-radius: 120px;
+	border-radius: 120px;
+	background:#fff;
+	margin-bottom:22px;
+}
+
+.newsboard2 th{
+	font-family:'notokr-light';
+	padding:20px 0;
+	border:0px solid red;
+	cursor:default;
+}
+
+.newsboard2 .newsnum{
+	padding-left:25px;
+}
+
+.newsboard2 .newsyear{
+	padding-left:60px;
+}
+
+.newsboard2 .newstitle{
+	padding-left:585px;
+}
+
+.newsboard2 .newsname{
+	padding-left:590px;
+}
+
+
+.newsboard2  td{
+    padding:20px 0;
+	float:left;
+	margin-left:20px;
+	padding-left:20px;
+	cursor:default;
+}
+
+.newsboard2  td.tdtxt1 a:hover{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.newsboard2  td.tdtxt1{
+	border:0px solid yellow;
+	width:1100px;
+	cursor:pointer;
+}
+
+.newsboard2 ul{
+	text-align:center;
+}
+
+.newsboard2 ul li{
+	display:inline;
+}
+
+.newsboard2 ul li a{
+		color:#fff;
+		display:inline-block;
+}
+
+.newsboard2 ul li a.arrow1{
+	 border-style:solid; 
+	 border-width:10px;
+	border-color:transparent #fff transparent transparent;
+	margin-top:10px;
+
+}
+
+.newsboard2 ul li a.arrow2{
+	margin-top:10px;
+	border-style:solid;
+	border-width:10px;
+	border-color:transparent transparent transparent #fff;
+}
+
+.newsboard2 ul li a.arrow1:active{
+border-style:solid;
+	 border-width:10px;
+	border-color:transparent #ffea00 transparent transparent;
+}
+
+.newsboard2 ul li a.arrow2:active{
+border-style:solid;
+	border-width:10px;
+	border-color:transparent transparent transparent #ffea00;
+}
+
+.newsboard2 .boardnumb{
+	border:0px solid red;
+	width:37px;
+	height:37px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	background:#fff;
+	font-family:'notokr-regular';
+	font-size:20px;
+	color:#000;
+	line-height:38px;
+}
+
+.newsboard2 ul li.active a.boardnumb{
+	background-color:#ffea00;
+}
+
+
+.blog{
+	width:100%;
+	margin-top:50px;
+}
+
+.blog .blogtxxt{
+	font-family:'notokr-regular';
+	font-size:28px;
+	color:#fff;
+	border:0px solid red;
+	cursor:default;
+}
+
+.blog .blogtxxt img{
+	margin-left:10px;
+}
+
+.blogvideo{
+	margin-top:50px;
+	border:0px solid blue;
+	text-align:center;
+	position:relative;
+}
+
+.blogvideo video{
+	width:100%;
+}
+
+.blogvideo p img{
+	width:10%;
+	border:0px solid red;
+	position:absolute;
+	top:320px;
+	left:676px;
+	display:none;
+	cursor:pointer;
+}
+
+.blogvideo:hover p img{
+	display:block;
+	border-radius: 20px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+}
+
+.blogvideo:active p img{
+	border-radius: 20px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+	opacity: 0.7;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.blogfoot{
+	width:100%;
+	margin-top:50px;
+	clear:both;
+}
+
+.blogfoot span{
+	font-family:'notokr-regular';
+}
+
+.blogfoot dl{
+	width:50%;
+	float:left;
+}
+
+.blogfoot dt{
+	margin-bottom:30px;
+}
+
+.blogfoot dd{
+	margin-left:20px;
+	width:96%;
+	line-height:36px;
+	height:150px;
+	  display: inline-block;
+}
+
+.blogfoot a{
+	color:#fff;
+	font-family:'notokr-light';
+	font-size:25px;
+}
+
+.blogfoot a:hover{
+	text-decoration:underline;
+}
+
+
+
+
+
+/**********************************SUB5끝*********************************/
+
+
+
+/*********************************LOGIN시작*******************************/
+
+#subloginvisual{
+	width:100%;
+	height:100%;
+	background:url(../img/sub/subloginbg.png) no-repeat center top;
+	background-size:cover;
+	padding-top:230px;
+}
+
+.loginbg{
+	width:700px;
+	height:490px;
+	background:rgba(255,255,255,0.2);
+	margin:0 auto;
+	position:relative;
+}
+
+.loginbg form{
+	margin-left:80px;
+	padding-top:77px;
+}
+.loginbg .logid input{
+	width:390px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:25px;
+	color:#747474;
+	text-indent:10px;
+	margin-bottom:10px;
+}
+
+.loginbg .pw input{
+	width:390px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:25px;
+	color:#747474;
+	text-indent:10px;
+}
+
+.loginbg .sbmit input{
+	position:absolute;
+	top:77px;
+	right:80px;
+	width:137px;
+	height:145px;
+	-webkit-border-radius: 15px;
+	font-family:'notokr-reguler';
+	font-size:25px;
+	color:#fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e7c89f+0,d8b17e+99 */
+	background: rgb(231,200,159); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(231,200,159,1) 0%, rgba(216,177,126,1) 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(231,200,159,1) 0%,rgba(216,177,126,1) 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(231,200,159,1) 0%,rgba(216,177,126,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7c89f', endColorstr='#d8b17e',GradientType=0 ); /* IE6-9 */
+}
+
+.loginbg .sbmit input:active{
+	background:#e4c499;
+			border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+}
+
+.memberInfo{
+	margin-left:150px;
+	margin-top:10px;
+	margin-bottom:33px;
+
+}
+
+.memberInfo a{
+	font-family:'notokr-light';
+	font-size:20px;
+	color:#fff;
+}
+
+.memberInfo a:first-child{
+	font-weight:600;
+}
+
+.memberInfo a:last-child{
+		background:url(../img/sub/loginborder.gif) no-repeat 0 5px;
+		padding:0 7px;
+}
+
+.snslogin{
+	margin-left:80px;
+}
+
+.snslogin a{
+	display:inline-block;
+}
+
+.snslogin a:first-child{
+	margin-bottom:10px;
+}
+
+.snslogin .facelogin:active{
+	border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+	opacity:0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+	
+}
+
+.snslogin .googlelogin:active{
+	border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+	opacity:0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+	
+}
+
+.snslogin p{
+	position:absolute;
+	top:175px;
+	right:0;
+}
+
+/*********************************LOGIN끝*******************************/
+
+@media all and (min-width:480px) and (max-width:599px){
+
+	
+
+}
+
+@media all and (max-width:479px){
+	
+
+	#subloginvisual{
+	width:100%;
+	height:100%;
+	background:url(../img/sub/subloginbg.png) no-repeat center top;
+	background-size:cover;
+	padding-top:150px;
+	border:0px solid red;
+}
+
+.loginbg{
+	width:700px;
+	height:490px;
+	background:rgba(255,255,255,0.2);
+	margin:0 auto;
+	position:relative;
+}
+
+.loginbg form{
+	margin-left:80px;
+	padding-top:77px;
+}
+.loginbg .logid input{
+	width:390px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:25px;
+	color:#747474;
+	text-indent:10px;
+	margin-bottom:10px;
+}
+
+.loginbg .pw input{
+	width:390px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:25px;
+	color:#747474;
+	text-indent:10px;
+}
+
+.loginbg .sbmit input{
+	position:absolute;
+	top:77px;
+	right:80px;
+	width:137px;
+	height:145px;
+	-webkit-border-radius: 15px;
+	font-family:'notokr-reguler';
+	font-size:25px;
+	color:#fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e7c89f+0,d8b17e+99 */
+	background: rgb(231,200,159); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(231,200,159,1) 0%, rgba(216,177,126,1) 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(231,200,159,1) 0%,rgba(216,177,126,1) 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(231,200,159,1) 0%,rgba(216,177,126,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7c89f', endColorstr='#d8b17e',GradientType=0 ); /* IE6-9 */
+}
+
+.loginbg .sbmit input:active{
+	background:#e4c499;
+			border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+}
+
+.memberInfo{
+	margin-left:150px;
+	margin-top:10px;
+	margin-bottom:33px;
+
+}
+
+.memberInfo a{
+	font-family:'notokr-light';
+	font-size:20px;
+	color:#fff;
+}
+
+.memberInfo a:first-child{
+	font-weight:600;
+}
+
+.memberInfo a:last-child{
+		background:url(../img/sub/loginborder.gif) no-repeat 0 5px;
+		padding:0 7px;
+}
+
+.snslogin{
+	margin-left:80px;
+}
+
+.snslogin a{
+	display:inline-block;
+}
+
+.snslogin a:first-child{
+	margin-bottom:10px;
+}
+
+.snslogin .facelogin:active{
+	border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+	opacity:0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+	
+}
+
+.snslogin .googlelogin:active{
+	border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+	opacity:0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+	
+}
+
+.snslogin p{
+	position:absolute;
+	top:175px;
+	right:0;
+}
+
+
+}
+
+
+/*********************************membership시작*******************************/
+
+#submembervisual{
+	width:100%;
+	height:100%;
+	background:url(../img/sub/subloginbg.png) no-repeat center top;
+	background-size:cover;
+	padding-top:200px;
+}
+
+.memberbg{
+	width:960px;
+	height:730px;
+	background:rgba(255,255,255,0.2);
+	margin:0 auto;
+	position:relative;
+}
+
+.memberbg form{
+	margin-left:80px;
+	padding-top:35px;
+}
+
+.memlogid #memlogidin{
+	width:390px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:20px;
+	color:#747474;
+	text-indent:10px;
+	margin-bottom:10px;
+}
+
+
+.memberbg .membuttom{
+	width:96px;
+	height:55px;
+	margin-left:10px;
+	-webkit-border-radius: 15px;
+	font-family:'notokr-reguler';
+	font-size:20px;
+	color:#fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d77af+0,405fa1+100 */
+background: #5d77af; /* Old browsers */
+background: -moz-linear-gradient(top, #5d77af 0%, #405fa1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #5d77af 0%,#405fa1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #5d77af 0%,#405fa1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d77af', endColorstr='#405fa1',GradientType=0 ); /* IE6-9 */
+}
+
+.memberbg .membuttom:active{
+	background:#405fa1;
+	border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+}
+
+.memberbg .mempw input{
+	width:390px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:20px;
+	color:#747474;
+	text-indent:10px;
+	margin-bottom:10px;
+}
+.memberbg .mempwcheck input{
+	width:390px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:20px;
+	color:#747474;
+	text-indent:10px;
+	margin-bottom:10px;
+}
+
+.memaddre #memaddree{
+	width:115px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:50px;
+	font-family:'notokr-light';
+	font-size:20px;
+	color:#747474;
+	text-indent:10px;
+	margin-bottom:10px;
+}
+
+.memaddre .membuttom2{
+	margin-left:10px;
+	display:inline-block;
+	width:96px;
+	height:55px;
+	-webkit-border-radius: 15px;
+	font-family:'notokr-reguler';
+	font-size:20px;
+white-space:normal;
+	color:#fff;
+	vertical-align:top;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d77af+0,405fa1+100 */
+background: #5d77af; /* Old browsers */
+background: -moz-linear-gradient(top, #5d77af 0%, #405fa1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #5d77af 0%,#405fa1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #5d77af 0%,#405fa1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d77af', endColorstr='#405fa1',GradientType=0 ); /* IE6-9 */
+}
+
+.memberbg .membuttom2:active{
+	background:#405fa1;
+	border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+}
+
+
+.memberbg .memaddretext1 input{
+	width:500px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:20px;
+	color:#747474;
+	text-indent:10px;
+	margin-bottom:10px;
+}
+
+.memberbg .memaddretext2 input{
+	width:500px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:20px;
+	color:#747474;
+	text-indent:10px;
+	margin-bottom:10px;
+}
+
+.memberbg .memphone #memphonee{
+	width:390px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:20px;
+	color:#747474;
+	text-indent:10px;
+	margin-bottom:10px;
+}
+
+.memphone .membuttom3{
+	margin-left:10px;
+	display:inline-block;
+	width:96px;
+	height:55px;
+	-webkit-border-radius: 15px;
+	font-family:'notokr-reguler';
+	font-size:20px;
+	color:#fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d77af+0,405fa1+100 */
+background: #5d77af; /* Old browsers */
+background: -moz-linear-gradient(top, #5d77af 0%, #405fa1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #5d77af 0%,#405fa1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #5d77af 0%,#405fa1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d77af', endColorstr='#405fa1',GradientType=0 ); /* IE6-9 */
+}
+
+.memphone .membuttom3:active{
+	background:#405fa1;
+	border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+}
+
+.memberbg .memphonecode #memphonecodee{
+	width:390px;
+	border:1px solid #a6a6a6;
+	-webkit-border-radius: 15px;
+	height:65px;
+	font-family:'notokr-light';
+	font-size:20px;
+	color:#747474;
+	text-indent:10px;
+	margin-bottom:20px;
+}
+
+.memphonecode .membuttom4{
+	margin-left:10px;
+	display:inline-block;
+	width:96px;
+	height:55px;
+	-webkit-border-radius: 15px;
+	font-family:'notokr-reguler';
+	font-size:20px;
+	color:#fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d77af+0,405fa1+100 */
+background: #5d77af; /* Old browsers */
+background: -moz-linear-gradient(top, #5d77af 0%, #405fa1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #5d77af 0%,#405fa1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #5d77af 0%,#405fa1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d77af', endColorstr='#405fa1',GradientType=0 ); /* IE6-9 */
+}
+
+.memphonecode .membuttom4:active{
+	background:#405fa1;
+	border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+}
+
+.memberbg .sbmit{
+	text-align:center;
+}
+
+.memberbg .sbmit input{
+	width:390px;
+	height:55px;
+	-webkit-border-radius: 15px;
+	font-family:'notokr-reguler';
+	font-size:20px;
+	color:#fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d77af+0,405fa1+100 */
+background: #5d77af; /* Old browsers */
+background: -moz-linear-gradient(top, #5d77af 0%, #405fa1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #5d77af 0%,#405fa1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #5d77af 0%,#405fa1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d77af', endColorstr='#405fa1',GradientType=0 ); /* IE6-9 */
+}
+
+.memberbg .sbmit input:active{
+	background:#405fa1;
+	border-radius: 15px;
+	box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+}
+
+
+#submembervisual .membercat{
+	width:100%;
+}
+
+#submembervisual .membercat p{
+	position:absolute;
+	bottom:30px;
+	right:0;
+}
+
+
+
+/*********************************membership끝*******************************/

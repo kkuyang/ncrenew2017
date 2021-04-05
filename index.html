@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>NCSOFT</title>
+<meta charset="utf-8">
+<meta name="robots" content="index,flow">
+<meta name="title" content="NCSOFT">
+<meta name="description" content="NCSOFT소개,엔씨소프트소개,NCSOFT,엔씨소프트,게임 개발 및 서비스업체">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="./img/common/logo.ico" />
+<link rel="stylesheet" href="./css/import.css" />
+<link rel="stylesheet" href="./css/common.css" />
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="./css/swiper.min.css">
+<!-- Swiper JS -->
+<script src="./js/swiper.min.js"></script>
+<!--스크롤움직임-->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<!--드롭다운메뉴-->
+<script type="text/javascript" src="./js/jquery.selectDrop.js"></script>
+
+
+
+<!--스크롤움직임-->
+<script type="text/javascript">
+$(function() { 
+    function swing() { 
+        $('.move').animate({'bottom':'83px'},800).animate({'bottom':'65px'},800, swing); 
+    } 
+    swing(); 
+});
+
+</script>
+</head>
+
+<body onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
+	<main>
+		<header><!--nav-->
+			<div class="inner"><!--inner-->
+			<h1 class="PC"><a href="index.html" title="NCSOFT LOGO"><img src="./img/common/logo1.png" alt="logo" /></a></h1>
+			<h1 class="mobile"><a href="index.html" title="MOBILE NCSOFT LOGO"><img src="./img/common/mobilelogo1.png" alt="logo" /></a></h1>
+			
+			
+			<section class="nav_tab">
+				<ul class="navtbul">
+						<li class="navgation"><a href="javascript:goSlide(1)" onclick="tab_menu(0);">기업소개</a></li>
+						<li  class="navgation"><a href="javascript:goSlide(2)" onclick="tab_menu(1);">서비스소개</a></li>
+						<li  class="navgation"><a href="javascript:goSlide(3)" onclick="tab_menu(2);">인재채용</a></li>
+						<li  class="navgation"><a href="javascript:goSlide(4)" onclick="tab_menu(3);">사회공헌</a></li>
+						<li  class="navgation"><a href="javascript:goSlide(5)" onclick="tab_menu(4);">홍보채널</a></li>
+						<li class="login"><a href="login.html" title="로그인">로그인</a></li>
+						<li class="logo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+				</ul>
+			</section>
+						<script>
+						//상단 내비게이션 클릭시 처리하는 부분
+						var swiper = new Swiper('.swiper-container');
+
+						function goSlide(index){
+						swiper.slideTo(index, 1000, true);
+						}
+						
+						/*function tab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}*/
+						</script>
+				
+				
+			</div><!--inner-->
+		</header><!--//nav-->
+		
+		<!--햄버거 메뉴 시작-->
+			<div id="qnb">
+					<nav id="menu" class="left">
+					  <ul>
+							<li><a href="javascript:goSlide(1)" onclick="tab_menu(0);">기업소개</a></li>
+						<li><a href="javascript:goSlide(2)" onclick="tab_menu(1);">서비스소개</a></li>
+						<li><a href="javascript:goSlide(3)" onclick="tab_menu(2);">인재채용</a></li>
+						<li><a href="javascript:goSlide(4)" onclick="tab_menu(3);">사회공헌</a></li>
+						<li><a href="javascript:goSlide(5)" onclick="tab_menu(4);">홍보채널</a></li>
+						<li class="qnblogin"><a href="login.html" title="로그인"><img src="./img/common/login_bt1.png" onmouseover="this.src='./img/common/login_btov.png'" onmouseout="this.src='./img/common/login_bt1.png'" border="0"></a>
+						</li>
+						<li class="qnblogo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+					  </ul>
+					<a href="#" id="showmenu"><img src="./img/common/qna.png" class="imgg"/><i class="fa fa-align-justify"></i> </a> </nav>
+				</div>
+				<!--햄버거 제이쿼리-->
+					<script>
+							$("#showmenu").click(function(e){
+								e.preventDefault();
+								$("#menu").toggleClass("show");
+							});
+				
+					</script>
+			
+			
+			
+			<script>
+						//상단 내비게이션 클릭시 처리하는 부분
+						var swiper = new Swiper('.cate_layer');
+
+						function goSlide(index){
+						swiper.slideTo(index, 1000, true);
+						}
+						
+						$('.imgg').on({ 
+							'click': function() { 
+								 var src = ($(this).attr('src') === './img/common/qna.png') 
+									? './img/common/closebtn.png'
+									: './img/common/qna.png'; 
+								 $(this).attr('src', src); 
+							} 
+						});
+						
+						
+						/*function tab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}*/
+						</script>
+			<!--햄버거 메뉴 종료-->			
+		
+	<section id="visual"><!--스와이퍼 시작-->
+   <!-- Swiper -->
+    <div class="swiper-container"><!--swiper-container-->
+        <div class="swiper-wrapper"><!--wrapper-->	  
+		
+			<!--마우스 스크롤-->
+			<div class="move"><span><!--&nbsp;--></span></div>
+			<p class="movetext">SCROLL</p>
+			<!--//마우스 스크롤-->
+			
+            <div class="swiper-slide"><!--main bg 시작-->
+			<div class="visual_bg">
+						<ul id="mainbanner"><!--mainbanner-->
+							<li class="banner1">
+							<div><span class="bg01" ><img src="./img/main/text1.png" alt="Integrity" /></span><span class="bg012" ><img src="./img/main/text12.png" alt="Integrity" /></span></div>
+							</li>
+							
+							<li class="banner2" style="display: none;"><div><span class="bg02" ><img src="./img/main/text2.png" alt="Passion" /></span><span class="bg021" ><img src="./img/main/text21.png" alt="Passion" /></span></div></li>
+							
+							<li class="banner3" style="display: none;"><div><span class="bg03" style="display: block; "><img src="./img/main/text3.png" alt="Naver Ending Change" /></span><span class="bg031" style="display: block; "><img src="./img/main/text31.png" alt="Naver Ending Change" /></span></div></li>
+						</ul><!--//main banner-->
+						</div>
+			</div><!--//main bg 끝-->
+			
+			<!--세로슬라이드 시작 bg1-5-->
+            <div class="swiper-slide bg1">
+				<div class="textbox textbox1">
+					<dl>
+						<dd class="text1">즐거움으로 연결된 새로운 세상,<br />엔씨소프트가 만들어 갑니다.</dd>
+						<dt class="more"><a href="sub.html" title="기업소개로">MORE</a></dt>
+					</dl>
+				</div>
+			</div>
+			
+
+			<div class="swiper-slide bg2">
+				<img src="./img/main/NC_mainPC_bg2_1.png" />
+					<div class="textbox textbox2">
+						<dl>
+							<dd class="text2">엔씨소프트가 만든 즐거운 게임,<br />서비스소개</dd>
+							<dt class="more"><a href="sub2.html" title="서비스소개로">MORE</a></dt>
+						</dl>
+				</div>
+			</div>
+			
+			
+			<div class="swiper-slide bg3">
+				<div class="textbox textbox3">
+					<dl>
+						<dd class="text3">진취적인 기상을,<br />무궁무진한 창의력을 가진 사람,<br />정직과 신용을 가진 사람<br /> 세계 게임산업의 리더 엔씨소프트에 도전하세요.</dd>
+						<dt class="more"><a href="sub3.html" title="인재채용으로">MORE</a></dt>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="swiper-slide bg4">
+				<div class="textbox textbox4">
+					<dl>	
+						<dd class="text4">질적인 사회적 환경 조성 등을 위해<br />더욱 혁신적이고 차별화된<br />공익 사업을 추진해 나아갈 것입니다.</dd>
+						<dt class="more"><a href="sub4.html" title="사회공헌으로">MORE</a></dt>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="swiper-slide bg5">
+				<div class="textbox textbox5">
+					<dl>
+						<dd class="text5">우주정복 원정대여!<br />그대들의 꿈을 향해 던져라</dd>
+						<dt class="more"><a href="sub5.html" title="홍보채널로">MORE</a></dt>
+					</dl>
+				</div>
+				
+				<section id="footer"><!--footer-->
+				<div class="footerinner">
+					<dl>
+						<dd class="ser"><a href="https://cs.plaync.com/" target="_blank" title="고객센터">고객센터</a></dd>
+						<dd class="cs"><a href="http://kr.ncsoft.com/korean/support/service.aspx" target="_blank"  title="게임관련문의">게임관련문의처</a></dd>
+						<dd class="pri"><a href="#" onclick="window.open('http://kr.ncsoft.com/korean/popup/privacy/privacy151216.aspx','new','resizable=no width=1000 height=1000');return false" title="개인정보처리방침">개인정보처리방침</a></dd>
+						<dd class="youtube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/yousns.png" /></a></dd>
+						<dd class="twiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/twisns.png" /></a></dd>
+						<dd class="facebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/facesns.png" /></a></dd>
+						
+						<dd class="mbyoutube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/mbyousns.png" /></a></dd>
+						<dd class="mbtwiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/mbtwisns.png" /></a></dd>
+						<dd class="mbfacebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/mbfacesns.png" /></a></dd>
+						
+						<dd class="footerlogo"><img src="./img/common/footerlogo.png"  alt="하단로고"/></dd>
+						<dd class="footerlogo2"><img src="./img/common/tb_logo2.png" alt="footerplaynclogo2" /></dd>
+						<dd class="footermblogo2"><a href="http://www.plaync.com/"><img src="./img/common/mb_logo2.png" alt="footerplaynclogo2" /></a></dd>
+						<dd class="address"><address>(주)엔씨소프트 경기도 성남시 분당구 대왕판교로 644번길 12 (우)13494 대표 김택진<br class="tbspace" />사업자등록번호114-85-04244 통신판매업신고 제2013-경기성남-1268호</address><p>Copyright&copy;NCSOFT Corporation. All Right Reserved.</p></dd>
+					</dl>
+					
+					<!--메뉴구성-->
+					<dl id="sample" class="dropdown">
+						<dt class="drop"><a href="#"><img src="./img/common/drop.png" /></a></dt>
+						<dd class="dropmenu">
+							<ul class="dropline">
+								<li><a href="http://www.ncsoft.co.kr/" target="_blank">NCSOFT 한국 본사</a></li>
+								<li><a href="http://us.ncsoft.com/" target="_blank">NCSOFT West (US)</a></li>
+								<li><a href="http://eu.ncsoft.com/en-gb/" target="_blank">NCSOFT West (EU)</a></li>
+								<li><a href="http://www.arena.net/" target="_blank">ArenaNet</a></li>
+								<li><a href="http://www.nctaiwan.com/" target="_blank">NC Taiwan</a></li>
+								<li><a href="http://www.ncjapan.co.jp/" target="_blank">NC Japan</a></li>
+							</ul>
+						</dd>
+					
+					</dl>
+					<!--메뉴구성-->
+					</div>
+				</section><!--//footer-->
+				
+			</div> <!--swiper-slide bg5-->
+			<!--//세로슬라이드 끝 bg1-5-->
+        </div><!--//wrapper-->	  
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div><!--//swiper-container-->
+
+    <!-- Initialize Swiper -->
+		<script>
+			
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				direction: 'vertical',
+				slidesPerView: 1,
+				paginationClickable: false,
+				spaceBetween: 0,
+				speed:900,
+				simulateTouch:false,
+				// threshold:'50000',이상해상도에서만 클릭드래그 됨.
+				mousewheelControl: true
+			});
+			
+			var BannerScrollDelay = 5000;   // 배너변경시간 1000 = 1초
+			$(function () {
+			$("#mainbanner img").each(function (m_index, m_item) {
+			var imgSrc = $(m_item).attr("src");
+			if (imgSrc.substr(imgSrc.length - 4) === '.png' || imgSrc.substr(imgSrc.length - 4) === '.PNG') {
+			$(m_item).css("filter", "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='crop',src='" + imgSrc + "')");
+			}
+			});
+
+			mainStart();
+			SubSlide();
+			});
+
+			/*======================================================
+			--  메인배너
+			======================================================*/
+			// 메인배너 슬라이드 액션
+			var mainBannerNo = 0;
+			function mainSlide(callNo) {
+
+			if ($("#mainbanner").find("li").eq(callNo).css("display") == "none") {
+			$("#mainbanner").find("li").each(function (index, item) {
+			if ($(item).css("display") != "none") {
+			$(item).fadeOut("slow");
+
+			}
+			if (index == callNo) {
+			$(item).find("span").hide();
+			$(item).fadeIn("slow", function () {
+			SubSlide();
+			});
+
+			mainBannerNo = index;
+			}
+			});
+			}
+			}
+
+			function SubSlide() {
+			$("#mainbanner > li").each(function (p_index, p_item) {
+			var moveValue = $(p_item).find("span").css("left");
+			if ($(p_item).css("display") != "none") {
+			if (p_index == 0) { befValue = 230; moveValue = 190; }
+			if (p_index == 1) { befValue = 230; moveValue = 190; }
+			if (p_index == 2) { befValue = 280; moveValue = 240; }
+			if (p_index == 3) { befValue = 180; moveValue = 141; }
+			$(p_item).find("span").show().css({ "opacity": "0", "left": befValue }).stop().animate({
+			"left": moveValue + "px",
+			opacity: 1
+			}, 2000);
+			}
+			});
+			}
+
+			var mainSetTime = null;
+
+			// 스타터
+			function mainStart() {
+			mainSetTime = window.setInterval("mainOnAction()", BannerScrollDelay);
+			}
+
+			// 중지
+			/*function mainStop() {
+			clearInterval(mainSetTime);
+			mainSetTime = null;
+			}*/
+
+
+			// 일정시간마다 배너변경
+			function mainOnAction() {
+			mainSlide(mainGetNextNo(mainBannerNo));
+			}
+
+			// 페이징클릭시
+			/*function mainOnClick(callNo) {
+			mainSlide(callNo);
+			mainStop();
+			mainStart();        
+			}*/
+
+			// 다음 index정보 가져오기
+			function mainGetNextNo(no) {
+			no++;
+			if ($("#mainbanner").find("li").length <= no) {
+			no = 0;
+			}
+			return no;
+			}
+		</script>
+	</section><!--//스와이퍼 끝-->
+	</main>
+</body>
+</html>

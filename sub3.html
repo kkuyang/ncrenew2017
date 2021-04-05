@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>NCSOFT 인재채용</title>
+<meta charset="utf-8">
+<meta name="robots" content="index,flow">
+<meta name="title" content="NCSOFT">
+<meta name="description" content="NCSOFT소개,엔씨소프트소개,NCSOFT,엔씨소프트,게임 개발 및 서비스업체">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="./img/common/logo.ico" />
+<link rel="stylesheet" href="./css/import.css" />
+<link rel="stylesheet" href="./css/subcommon.css" />
+<!--스크롤움직임-->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<!--드롭다운메뉴-->
+<script type="text/javascript" src="./js/jquery.selectDrop.js"></script>
+<!--tabs-->
+<script type="text/javascript" src="./js/cbpFWTabs.js"></script>
+<!-- Swiper JS -->
+<script src="./js/swiper.min.js"></script>
+
+<!--스크롤움직임-->
+<script type="text/javascript">
+$(function() { 
+    function swing() { 
+        $('.top').animate({'bottom':'130px'},800).animate({'bottom':'190px'},800, swing); 
+    } 
+    swing(); 
+});
+
+</script>
+
+
+</head>
+
+<body  onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
+	<main>
+	<header><!--nav-->
+			<div class="inner"><!--inner-->
+			<h1 class="PC"><a href="index.html" title="NCSOFT LOGO"><img src="./img/common/logo1.png" alt="logo" /></a></h1>
+			<h1 class="mobile"><a href="index.html" title="MOBILE NCSOFT LOGO"><img src="./img/common/mobilelogo1.png" alt="logo" /></a></h1>
+			
+			<section class="nav_tab">
+				<ul class="navtbul">
+						<li class="navgation"><a href="sub.html" onclick="subtab_menu(0);">기업소개</a></li>
+						<li  class="navgation"><a href="sub2.html"onclick="subtab_menu(1);">서비스소개</a></li>
+						<li  class="navgation active"><a href="sub3.html"onclick="subtab_menu(2);">인재채용</a></li>
+						<li  class="navgation"><a href="sub4.html"onclick="subtab_menu(3);">사회공헌</a></li>
+						<li  class="navgation"><a href="sub5.html"onclick="subtab_menu(4);">홍보채널</a></li>
+						<li class="login"><a href="login.html" title="로그인">로그인</a></li>
+						<li class="logo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+				</ul>
+			</section>
+				
+				<script>
+				function subtab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}
+				</script>
+				
+			</div><!--inner-->
+		</header><!--//nav-->
+	
+	<!--햄버거 메뉴 시작-->
+			<div id="qnb">
+					<nav id="menu" class="left">
+					  <ul>
+							<li><a href="sub.html">기업소개</a></li>
+						<li><a href="sub2.html">서비스소개</a></li>
+						<li><a href="sub3.html">인재채용</a></li>
+						<li><a href="sub4.html">사회공헌</a></li>
+						<li><a href="sub5.html">홍보채널</a></li>
+						<li class="qnblogin"><a href="login.html" title="로그인"><img src="./img/common/login_bt1.png" onmouseover="this.src='./img/common/login_btov.png'" onmouseout="this.src='./img/common/login_bt1.png'" border="0"></a>
+						</li>
+						<li class="qnblogo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+					  </ul>
+					<a href="#" id="showmenu"><img src="./img/common/qna.png" class="imgg"/><i class="fa fa-align-justify"></i> </a> </nav>
+				</div>
+				<!--햄버거 제이쿼리-->
+					<script>
+							$("#showmenu").click(function(e){
+								e.preventDefault();
+								$("#menu").toggleClass("show");
+							});
+				
+					</script>
+			
+			
+			
+			<script>
+						//상단 내비게이션 클릭시 처리하는 부분
+						var swiper = new Swiper('.cate_layer');
+
+						function goSlide(index){
+						swiper.slideTo(index, 1000, true);
+						}
+						
+						$('.imgg').on({ 
+							'click': function() { 
+								 var src = ($(this).attr('src') === './img/common/qna.png') 
+									? './img/common/closebtn.png'
+									: './img/common/qna.png'; 
+								 $(this).attr('src', src); 
+							} 
+						});
+						
+						
+						/*function tab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}*/
+						</script>
+			<!--햄버거 메뉴 종료-->		
+	
+
+		<div class="top">
+			<div class="topbg"><a href="#" class="topText"><img src="./img/sub/topbg.png" alt="topbg" /></a></div>
+			<script>
+					$( '.topText' ).click( function() {
+					  $( 'html, body' ).animate( { scrollTop : 0 }, 0 );
+					  return false;
+					} );
+					/*a href="javascript:scrollUp()"
+					var scrollUpDelay = 1;
+					var scrollUpSpeed = 30;//위로 올라가는 속도, 숫자가 클수록 빨라짐
+					function scrollUp()
+					{
+					if(document.body.scrollTop<1)
+					{
+					return;
+					}
+					document.body.scrollTop=document.body.scrollTop-scrollUpSpeed;
+					setTimeout('scrollUp()',scrollUpDelay);
+					}*/
+					</script>
+		</div>
+		
+		<section id="sub3visual"><!--sub3visual-->
+		</section><!--//sub3visual-->
+		
+		<section id="sub3contents"><!--sub3contents-->
+		
+			<div id="tabs" class="sub3contentsinner">
+				<nav class="sub3topbox">
+					<ul class="sub3textbox">
+						<li><a href="#section-111 javascript:void(0)">인사제도</a></li>
+						<li><a href="#section-222 javascript:void(0)">채용절차</a></li>
+						<li><a href="#section-333 javascript:void(0)" onclick="newtab()">채용공고</a></li>
+					</ul>
+				</nav>
+				
+				<div class="content"><!--content -->
+				
+				
+				<section id="section-111"><!--section-1-->
+					<div class="reward">
+						<p><img src="./img/sub/dal.png" /><span>평가보상</span></p>
+							<dl class="rwrbox1">
+								<dt><span class="rewrboxtxt">조직평가(KPI)</span></dt>
+								<dd>전사전략에 기초하여 수립된 “조직 KPI”에 따른 성과평가</dd>
+								</dl>
+							
+							<dl class="rwrbox2">
+								<dt><span class="rewrboxtxt">개인평가(MBO)</span></dt>							
+								<dd>조직 KPI에 기초한 개인별 Objective에 따른 성과평가역량개발가이드에 의한 역량평가<br />*개인별 목표 수립 – 중간 리뷰 – 연말성과평가(연1회)</dd>
+							</dl>
+					</div>
+					
+					<div class="reward1">
+						<dl>
+							<dt>결과 활용</dt>
+							<dd><strong>보상 : </strong>연봉, 상여 책정 시 연계</dd>
+							<dd><strong>육성,자기개발 : </strong>이후 장점을 강화하고 단점을 보완할 수 있는 교육 · 육성 가이드로 활용</dd>
+							<dd><strong>멘토링,커뮤니케이션 : </strong>상사 멘토링 시 가이드로 활용</dd>
+							<dd><strong>승진 : </strong>승진 포인트로 활용</dd>
+							<dd><strong>기타 : </strong>이동 ⁄ 해외파견 ⁄ 핵심인재 선발 등 엔씨 구성원의 역량개발에 필요한 다양한 영역 적용</dd>
+						</dl>
+					</div>
+					
+					<div class="reward2">
+						<dl class="rewrbox">
+							<dt><span>정규연봉(Base pay)</span></dt>
+							<dt><span>단기 성과급(STI)</span></dt>
+							<dt><span>장기 성과급(LTI)</span></dt>
+							<dt><span>기여급</span></dt>
+						</dl>
+						
+						<dl class="rewr2">
+							<dt>정규연봉(Base pay)</dt>
+							<dd>평가결과를 바탕으로 종합검토하여 책정 Market 경쟁력을 가진 보상수준 지향 평가결과를 바탕으로 한 Merit Increase 방식</dd>
+						</dl>
+						
+						<dl class="rewr2">
+							<dt>단기 성과급(STI)</dt>
+							<dd>고성과 조직, 고성과 기여자에게 Market 최고 수준의 보상 수준 지향<br /><strong>결정방식 : </strong>당해년도 경영실적, 조직성과평가, 개인성과평가를 종합적으로 고려하여 개인별 성과급 지급<br /><strong>지급방식 : </strong>PI(Performance Incentive) 및 PS(Profit sharing)</dd>
+						</dl>
+						
+						<dl class="rewr2">
+							<dt>장기 성과급(LTI)</dt>
+							<dd>회사의 중장기적 성장 ∙ 발전에 지속적으로 기여할 수 있는 보상제도 운영<br /><strong>지급대상 : </strong>임원 및 우수인재(선별)<br /><strong>결정방식 : </strong>장기경영실적, 장기성과 기여도를 반영하여 개인별  차등 지급</dd>
+						</dl>
+						
+						<dl class="rewr2">
+							<dt>기여급</dt>
+							<dd>회사의 성장발전에 핵심적으로 기여한 직원을 선발하여 퇴직 시까지 정기적⋅지속적으로 기여급 지급하여, Market 최고 수준의 안정적 보상 혜택 제공</dd>
+						</dl>
+					</div>
+					
+					<div class="reward3">
+						<p><img src="./img/sub/dal.png" /><span>복리후생</span></p>
+						<dl>
+							<dt>엔씨 복지카드</dt>
+							<dd>신용카드 개념의 법인카드로 지원범위 내 자율적으로 사용하여 제도 이용의 편의성을 지원하는<br />카드 연 180만원 한도 내 자기개발, 배낭여행, 체력단련, 문화생활, 생활복지, 건강 ⁄ 의료비 지원</dd>
+							
+							<dt>종합 메디컬플랜</dt>
+							<dd>직원 및 직원가족(본인 부모, 본인 배우자 부모 포함)의 일상생활 중 발생할 수 있는 상해, 질병에 대해 단체 상해보험을 통한<br />의료비 지원 입원의료비 상해/질병 1사고 당 2천만원 한도 내 지원 및 통원치료비 ⁄ 치과보철비 지원<br />의료비 이외 본인 및 배우자의 3대 질병(암, 뇌혈관, 허혈성심장질환), 상해후유장애 및 질병 ⁄ 상해사망시 지원</dd>
+							
+							<dt>사내식당 운영</dt>
+							<dd>다양한 코너(총 7개)에서 조식, 중식, 석식을 이용</dd>
+							
+							<dt>콘도미니엄 운영</dt>
+							<dd>전국 휴양지에서 저렴하게 이용 가능한 콘도미니엄 운영 (한화리조트, 대명리조트, 오크밸리 등)</dd>
+							
+							<dt>사내 동호회 지원</dt>
+							<dd>스포츠 (농구, 야구, 축구, 테니스, 수영 등)와 취미활동(사진, 게임, 음악 등) 등 각종 동호회 20 여개 운영 지원</dd>
+							
+							<dt>주택자금, 생활안정자금 지원</dt>
+							<dd>주택마련자금, 생활안정자금 대출 지원 (근속기간 및 대출목적에 따라 한도금액 및 금리 적용)</dd>
+							
+							<dt>어린이집 운영</dt>
+							<dd>만1세~만5세 직원 자녀를 대상으로 다양한 프로그램 운영</dd>
+							
+							<dt>Fitness Center 운영</dt>
+							<dd>체력단련실: 113.5평, GX룸: 35.5평, 락커룸 ⁄ 샤워실: 37.9평, 상담실 외 49.3평 규모</dd>	
+						</dl>						
+					</div>
+					
+				</section><!--//section-1-->
+				<section id="section-222"><!--section-2-->
+						<p><img src="./img/sub/sub3chea.png" /></p>
+				</section><!--section-2-->
+				
+					<section id="section-333"><!--section-3-->
+					<p>젊음과 패기와 열정이 가득한 곳! 세계 최대의 게임 전문 기업 엔씨소프트와 함께 꿈을 이루어나갈 분들을 찾습니다. </p>
+					<p><img src="./img/sub/sub3chea1.png" /></p>
+				</section><!--//section-3-->
+					
+				
+				</div><!--//content -->
+			</div><!--//tabs, contentsinner -->
+		</section><!--//sub3contents-->
+		
+	
+		<script>
+			new CBPFWTabs( document.getElementById( 'tabs' ) );
+		</script>
+	
+	<script>
+		window.onload = function(){
+	setTimeout (function(){
+	scrollTo(0,0);}, 100);
+	}
+	</script>
+	
+	
+		<section id="footer"><!--footer-->
+				<div class="footerinner">
+					<dl>
+						<dd class="ser"><a href="https://cs.plaync.com/" target="_blank" title="고객센터">고객센터</a></dd>
+						<dd class="cs"><a href="http://kr.ncsoft.com/korean/support/service.aspx" target="_blank"  title="게임관련문의">게임관련문의처</a></dd>
+						<dd class="pri"><a href="#" onclick="window.open('http://kr.ncsoft.com/korean/popup/privacy/privacy151216.aspx','new','resizable=no width=1000 height=1000');return false" title="개인정보처리방침">개인정보처리방침</a></dd>
+						<dd class="youtube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/yousns.png" /></a></dd>
+						<dd class="twiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/twisns.png" /></a></dd>
+						<dd class="facebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/facesns.png" /></a></dd>
+						
+						<dd class="mbyoutube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/mbyousns.png" /></a></dd>
+						<dd class="mbtwiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/mbtwisns.png" /></a></dd>
+						<dd class="mbfacebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/mbfacesns.png" /></a></dd>
+						
+						<dd class="footerlogo"><img src="./img/common/footerlogo.png"  alt="하단로고"/></dd>
+						<dd class="footerlogo2"><img src="./img/common/tb_logo2.png" alt="footerplaynclogo2" /></dd>
+						<dd class="footermblogo2"><a href="http://www.plaync.com/"><img src="./img/common/mb_logo2.png" alt="footerplaynclogo2" /></a></dd>
+						<dd class="address"><address>(주)엔씨소프트 경기도 성남시 분당구 대왕판교로 644번길 12 (우)13494 대표 김택진<br class="tbspace" />사업자등록번호114-85-04244 통신판매업신고 제2013-경기성남-1268호</address><p>Copyright&copy;NCSOFT Corporation. All Right Reserved.</p></dd>
+					</dl>
+					
+					<!--메뉴구성-->
+					<dl id="sample" class="dropdown">
+						<dt class="drop"><a href="javascript:void(0)"><img src="./img/common/drop.png" /></a></dt>
+						<dd class="dropmenu">
+							<ul class="dropline">
+								<li><a href="http://www.ncsoft.co.kr/" target="_blank">NCSOFT 한국 본사</a></li>
+								<li><a href="http://us.ncsoft.com/" target="_blank">NCSOFT West (US)</a></li>
+								<li><a href="http://eu.ncsoft.com/en-gb/" target="_blank">NCSOFT West (EU)</a></li>
+								<li><a href="http://www.arena.net/" target="_blank">ArenaNet</a></li>
+								<li><a href="http://www.nctaiwan.com/" target="_blank">NC Taiwan</a></li>
+								<li><a href="http://www.ncjapan.co.jp/" target="_blank">NC Japan</a></li>
+							</ul>
+						</dd>
+					
+					</dl>
+					<!--메뉴구성-->
+					</div>
+				</section><!--//footer-->
+	</main>
+	
+	<script>
+	    function newtab(){
+		
+		open("http://recruit.ncsoft.net/korean/careers/adoptionsection.aspx?d1=1","","");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>NCSOFT 로그인</title>
+<meta charset="utf-8">
+<meta name="robots" content="index,flow">
+<meta name="title" content="NCSOFT">
+<meta name="description" content="NCSOFT소개,엔씨소프트소개,NCSOFT,엔씨소프트,게임 개발 및 서비스업체">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="./img/common/logo.ico" />
+<link rel="stylesheet" href="./css/import.css" />
+<link rel="stylesheet" href="./css/subcommon.css" />
+<!--햄버거-->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<!--드롭다운메뉴-->
+<script type="text/javascript" src="./js/jquery.selectDrop.js"></script>
+<!-- 햄버거 버튼x -->
+<script src="./js/swiper.min.js"></script>
+
+</head>
+
+<body  onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
+	<main>
+	<header><!--nav-->
+			<div class="inner"><!--inner-->
+			<h1 class="PC"><a href="index.html" title="NCSOFT LOGO"><img src="./img/common/logo1.png" alt="logo" /></a></h1>
+			<h1 class="mobile"><a href="index.html" title="MOBILE NCSOFT LOGO"><img src="./img/common/mobilelogo1.png" alt="logo" /></a></h1>
+			
+			<section class="nav_tab">
+				<ul class="navtbul">
+						<li class="navgation"><a href="sub.html" onclick="subtab_menu(0);">기업소개</a></li>
+						<li  class="navgation"><a href="sub2.html"onclick="subtab_menu(1);">서비스소개</a></li>
+						<li  class="navgation"><a href="sub3.html"onclick="subtab_menu(2);">인재채용</a></li>
+						<li  class="navgation"><a href="sub4.html"onclick="subtab_menu(3);">사회공헌</a></li>
+						<li  class="navgation"><a href="sub5.html"onclick="subtab_menu(4);">홍보채널</a></li>
+						<li class="login active"><a href="login.html" title="로그인">로그인</a></li>
+						<li class="logo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+				</ul>
+			</section>
+				
+				<script>
+				function subtab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}
+				</script>
+				
+			</div><!--inner-->
+		</header><!--//nav-->
+	
+<!--햄버거 메뉴 시작-->
+			<div id="qnb">
+					<nav id="menu" class="left">
+					  <ul>
+							<li><a href="sub.html">기업소개</a></li>
+						<li><a href="sub2.html">서비스소개</a></li>
+						<li><a href="sub3.html">인재채용</a></li>
+						<li><a href="sub4.html">사회공헌</a></li>
+						<li><a href="sub5.html">홍보채널</a></li>
+						<li class="qnblogin"><a href="login.html" title="로그인"><img src="./img/common/login_bt1.png" onmouseover="this.src='./img/common/login_btov.png'" onmouseout="this.src='./img/common/login_bt1.png'" border="0"></a>
+						</li>
+						<li class="qnblogo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+					  </ul>
+					<a href="#" id="showmenu"><img src="./img/common/qna.png" class="imgg"/><i class="fa fa-align-justify"></i> </a> </nav>
+				</div>
+				<!--햄버거 제이쿼리-->
+					<script>
+							$("#showmenu").click(function(e){
+								e.preventDefault();
+								$("#menu").toggleClass("show");
+							});
+				
+					</script>
+			
+			
+			
+			<script>
+						//상단 내비게이션 클릭시 처리하는 부분
+						var swiper = new Swiper('.cate_layer');
+
+						function goSlide(index){
+						swiper.slideTo(index, 1000, true);
+						}
+						
+						$('.imgg').on({ 
+							'click': function() { 
+								 var src = ($(this).attr('src') === './img/common/qna.png') 
+									? './img/common/closebtn.png'
+									: './img/common/qna.png'; 
+								 $(this).attr('src', src); 
+							} 
+						});
+						
+						
+						/*function tab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}*/
+						</script>
+			<!--햄버거 메뉴 종료-->		
+		
+		<section id="subloginvisual"><!--subloginvisual-->
+		
+			<div class="loginbg">
+				
+				
+				<form name="login" action="index_submit" method="post" accept-charset="utf-8">
+	
+				<p class="logid"><input type="email" name="email" placeholder="아이디" required maxlength="20"></p>
+				
+				<p class="pw"><input type="password" name="password" placeholder="비밀번호" required maxlength="16"></p>
+				
+				<p class="sbmit"><input type="submit" value="로그인"></p>			
+				
+				</form>
+				
+				<div class="memberInfo">
+						<a href="membership.html" class="join">회원가입</a>
+						<a href="#" class="find">아이디/비밀번호찾기</a>
+				</div>
+				
+				<div class="snslogin">
+					<a href="https://ko-kr.facebook.com/" target="_blank" class="facelogin"><img src="./img/sub/loginface.png" /></a>
+					<a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" class="googlelogin"><img src="./img/sub/logingoogle.png" /></a>
+					<p><img src="./img/sub/logincat.png" /></p>
+				</div>
+	
+			
+			</div>
+		
+		</section><!--//subloginvisual-->
+		
+	
+		<section id="footer"><!--footer-->
+				<div class="footerinner">
+					<dl>
+						<dd class="ser"><a href="https://cs.plaync.com/" target="_blank" title="고객센터">고객센터</a></dd>
+						<dd class="cs"><a href="http://kr.ncsoft.com/korean/support/service.aspx" target="_blank"  title="게임관련문의">게임관련문의처</a></dd>
+						<dd class="pri"><a href="#" onclick="window.open('http://kr.ncsoft.com/korean/popup/privacy/privacy151216.aspx','new','resizable=nowidth=500 height=550');return false" title="개인정보처리방침">개인정보처리방침</a></dd>
+						<dd class="youtube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/yousns.png" /></a></dd>
+						<dd class="twiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/twisns.png" /></a></dd>
+						<dd class="facebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/facesns.png" /></a></dd>
+						
+						<dd class="mbyoutube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/mbyousns.png" /></a></dd>
+						<dd class="mbtwiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/mbtwisns.png" /></a></dd>
+						<dd class="mbfacebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/mbfacesns.png" /></a></dd>
+						
+						<dd class="footerlogo"><img src="./img/common/footerlogo.png"  alt="하단로고"/></dd>
+						<dd class="footerlogo2"><img src="./img/common/tb_logo2.png" alt="footerplaynclogo2" /></dd>
+						<dd class="footermblogo2"><a href="http://www.plaync.com/"><img src="./img/common/mb_logo2.png" alt="footerplaynclogo2" /></a></dd>
+						<dd class="address"><address>(주)엔씨소프트 경기도 성남시 분당구 대왕판교로 644번길 12 (우)13494 대표 김택진<br class="tbspace" />사업자등록번호114-85-04244 통신판매업신고 제2013-경기성남-1268호</address><p>Copyright&copy;NCSOFT Corporation. All Right Reserved.</p></dd>
+					</dl>
+					
+					<!--메뉴구성-->
+					<dl id="sample" class="dropdown">
+						<dt class="drop"><a href="javascript:void(0)"><img src="./img/common/drop.png" /></a></dt>
+						<dd class="dropmenu">
+							<ul class="dropline">
+								<li><a href="http://www.ncsoft.co.kr/" target="_blank">NCSOFT 한국 본사</a></li>
+								<li><a href="http://us.ncsoft.com/" target="_blank">NCSOFT West (US)</a></li>
+								<li><a href="http://eu.ncsoft.com/en-gb/" target="_blank">NCSOFT West (EU)</a></li>
+								<li><a href="http://www.arena.net/" target="_blank">ArenaNet</a></li>
+								<li><a href="http://www.nctaiwan.com/" target="_blank">NC Taiwan</a></li>
+								<li><a href="http://www.ncjapan.co.jp/" target="_blank">NC Japan</a></li>
+							</ul>
+						</dd>
+					
+					</dl>
+					<!--메뉴구성-->
+					</div>
+				</section><!--//footer-->
+	</main>
+</body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>NCSOFT 기업소개</title>
+<meta charset="utf-8">
+<meta name="robots" content="index,flow">
+<meta name="title" content="NCSOFT">
+<meta name="description" content="NCSOFT소개,엔씨소프트소개,NCSOFT,엔씨소프트,게임 개발 및 서비스업체">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="./img/common/logo.ico" />
+<link rel="stylesheet" href="./css/import.css" />
+<link rel="stylesheet" href="./css/subcommon.css" />
+<!--스크롤움직임-->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<!--드롭다운메뉴-->
+<script type="text/javascript" src="./js/jquery.selectDrop.js"></script>
+<!--tabs-->
+<script type="text/javascript" src="./js/cbpFWTabs.js"></script>
+<!-- Swiper JS -->
+<script src="./js/swiper.min.js"></script>
+
+
+<!--스크롤움직임-->
+<script type="text/javascript">
+$(function() { 
+    function swing() { 
+        $('.top').animate({'bottom':'130px'},800).animate({'bottom':'190px'},800, swing); 
+    } 
+    swing(); 
+});
+
+
+</script>
+
+<!--시그니쳐탭-->
+<script type="text/javascript">
+$(function () {
+
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+    $(".sub1textboxB li").click(function () {
+        $(".sub1textboxB li").removeClass("active").css("color", "#000");
+        //$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
+        $(this).addClass("active").css("color", "#000");
+        $(".tab_content").hide()
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn()
+    });
+});
+
+</script>
+
+</head>
+
+<body onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
+	<main>
+	<header><!--nav-->
+			<div class="inner"><!--inner-->
+			<h1 class="PC"><a href="index.html" title="NCSOFT LOGO"><img src="./img/common/logo1.png" alt="logo" /></a></h1>
+			<h1 class="mobile"><a href="index.html" title="MOBILE NCSOFT LOGO"><img src="./img/common/mobilelogo1.png" alt="logo" /></a></h1>
+	
+			<section class="nav_tab">
+				<ul class="navtbul">
+						<li class="navgation active"><a href="sub.html" onclick="subtab_menu(0);">기업소개</a></li>
+						<li  class="navgation"><a href="sub2.html"onclick="subtab_menu(1);">서비스소개</a></li>
+						<li  class="navgation"><a href="sub3.html"onclick="subtab_menu(2);">인재채용</a></li>
+						<li  class="navgation"><a href="sub4.html"onclick="subtab_menu(3);">사회공헌</a></li>
+						<li  class="navgation"><a href="sub5.html"onclick="subtab_menu(4);">홍보채널</a></li>
+						<li class="login"><a href="login.html" title="로그인">로그인</a></li>
+						<li class="logo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+				</ul>
+			</section>
+				
+				<script>
+				function subtab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}
+				</script>
+			</div><!--inner-->
+		</header><!--//nav-->
+	
+<!--햄버거 메뉴 시작-->
+			<div id="qnb">
+					<nav id="menu" class="left">
+					  <ul>
+							<li><a href="sub.html">기업소개</a></li>
+						<li><a href="sub2.html">서비스소개</a></li>
+						<li><a href="sub3.html">인재채용</a></li>
+						<li><a href="sub4.html">사회공헌</a></li>
+						<li><a href="sub5.html">홍보채널</a></li>
+						<li class="qnblogin"><a href="login.html" title="로그인"><img src="./img/common/login_bt1.png" onmouseover="this.src='./img/common/login_btov.png'" onmouseout="this.src='./img/common/login_bt1.png'" border="0"></a>
+						</li>
+						<li class="qnblogo2"><a href="http://kr.plaync.com/" target="_blank" title="PLAY NC"><img src="./img/common/logo2.png" /></a></li>
+					  </ul>
+					<a href="#" id="showmenu"><img src="./img/common/qna.png" class="imgg"/><i class="fa fa-align-justify"></i> </a> </nav>
+				</div>
+				<!--햄버거 제이쿼리-->
+					<script>
+							$("#showmenu").click(function(e){
+								e.preventDefault();
+								$("#menu").toggleClass("show");
+							});
+				
+					</script>
+			
+			
+			
+			<script>
+						//상단 내비게이션 클릭시 처리하는 부분
+						var swiper = new Swiper('.cate_layer');
+
+						function goSlide(index){
+						swiper.slideTo(index, 1000, true);
+						}
+						
+						$('.imgg').on({ 
+							'click': function() { 
+								 var src = ($(this).attr('src') === './img/common/qna.png') 
+									? './img/common/closebtn.png'
+									: './img/common/qna.png'; 
+								 $(this).attr('src', src); 
+							} 
+						});
+						
+						
+						/*function tab_menu(num){ 
+						var f = $('.nav_tab').find('li');
+						for ( var i = 0; i < f.length; i++ ) {   
+						if ( i == num) {   
+						f.eq(i).addClass('active'); 
+						$('.nav_tab0' + i ).show();
+						} else {
+						f.eq(i).removeClass('active');     
+						$('.nav_tab0' + i ).hide();
+						}}}*/
+						</script>
+			<!--햄버거 메뉴 종료-->		
+	
+		<div class="top">
+			<div class="topbg"><a href="#" class="topText"><img src="./img/sub/topbg.png" alt="topbg" /></a></div>
+			<script>
+					$( '.topText' ).click( function() {
+					  $( 'html, body' ).animate( { scrollTop : 0 }, 0 );
+					  return false;
+					} );
+					/*a href="javascript:scrollUp()"
+					var scrollUpDelay = 1;
+					var scrollUpSpeed = 30;//위로 올라가는 속도, 숫자가 클수록 빨라짐
+					function scrollUp()
+					{
+					if(document.body.scrollTop<1)
+					{
+					return;
+					}
+					document.body.scrollTop=document.body.scrollTop-scrollUpSpeed;
+					setTimeout('scrollUp()',scrollUpDelay);
+					}*/
+					</script>
+		</div>
+		
+					
+
+	
+		<section id="sub1visual"><!--sub2visual-->
+		</section><!--//sub2visual-->
+		
+		<section id="sub1contents"><!--sub2contents-->
+	
+			<div  id="tabs" class="sub1contentsinner"><!--sub1contentsinner-->
+				<nav class="topppbox">
+					<ul class="sub1textbox">
+						<li><a href="#section-11 javascript:void(0)">기업개요</a></li>
+						<li><a href="#section-22 javascript:void(0)">기업연혁</a></li>
+						<li><a href="#section-33 javascript:void(0)">CEO소개</a></li>
+						<li><a href="#section-44 javascript:void(0)">글로벌네트워크</a></li>
+					</ul>
+				</nav>
+			
+			<div class="content">
+			<section id="section-11"><!--section-1-->
+				<div class="toptext"><!--toptx-->
+				
+				<div class="toptx">
+				<p class="backimg"><img src="./img/sub/sub1bg.png" /></p>
+					<dl>
+						<dt>즐거움으로 연결된 새로운 세상, 엔씨소프트가 만들어갑니다.</dt>
+						<dd>엔씨소프트는 세계 최고의 개발 기술력과 서비스 역량을 보유한 온라인 게임 리더입니다.<br /> 
+								1997년 년 설립, 리니지를 시작으로 인터넷 기반 온라인 게임의 대중화를 이끌었으며, 해외 시장을개척, 아시아, 북미, 유럽 등에 글로벌 네트워크를 확보해 나가고 있습니다.
+								엔씨소프트가 꿈꾸는 것은 세상 사람들을 더 즐겁게 만드는 것입니다. 온라인 세상을 뛰어넘어 즐거움 으로 연결된 새로운 세상을 만들어 나가고자 합니다.</dd>
+					</dl>
+				</div>
+					
+					<table >
+						<tr>
+						<th scope="col" >회사명</th>
+						<td>(주)엔씨소프트</td>
+						</tr>
+						
+						<tr>
+						<th scope="col">설립일</th>
+						<td>1997년 3월</td>
+						</tr>
+						
+						<tr>
+						<th scope="col">대표이사</th>
+						<td scope="row">김택진</td>
+						</tr>
+						
+						<tr>
+						<th scope="col">글로벌네트워크</th>
+						<td>한국(본사), 북미, 유럽, 일본, 대만</td>
+						</tr>
+						
+						<tr>
+						<th scope="col" rowspan="2">등록 및 상장</th>
+						<td>2000년 7월 7일 코스닥 등록</td>
+						</tr>
+						
+						<tr>
+						<td>2003년 5월 22일 거래소 이전 상장</td>
+						</tr>
+						
+						<tr>
+						<th scope="col">자본금</th>
+						<td>약100억원</td>
+						</tr>
+					</table>
+				</div><!--//toptx-->
+				
+				<div class="ncculture"><!--culture-->
+				
+				<p>엔씨소프트의 기업문화</p>
+					<dl>
+						<dt class="bold1">Mission</dt>
+						<dt class="bold">즐거움으로 연결된 새로운 세상을 만드는것</dt>
+						<dd  class="extent">엔씨소프트가 지향하는 궁극적인 목적은, 지구촌 한 사람이라도 더 즐겁게 연결하는 것 - 세상 사람들의 서로의 삶에 즐거움을 엮는 것 입니다. </dd>
+					</dl>
+					
+					<dl>
+						<dt class="bold1">Format</dt>
+						<dt class="bold">작고, 강하고, 알찬 기업</dt>
+						<dd  class="extent">작다의 의미는 존중을 바탕으로 하나의 팀으로서의 커뮤니케이션이 이루어지는 회사를 말합니다. Collaboration & Teamwork<br />
+						강하다의 의미는 바르게 결정하고 전체가 움직이는 것을 뜻합니다. Team Decision & Whole Movement<br />
+						알차다는 것은 선택과 집중을 통해 우리가 잘하는 일을 누구보다도 탁월하게 잘하여 감동을 창조하는 것을 말합니다. No Bluffing & Detail Oriented</dd>
+					</dl>
+					
+					<dl>
+						<dt class="bold1">Core Value</dt>
+						<dt class="bold">Integrity_진지함</dt>
+						<dd class="nter">도덕적(Moral), 또는 예술적(Artistic) 가치에 집착하고, 자신이 하는 일에 진지하게 임하는 것</dd>
+						
+						<dt class="bold">Passion_헌신</dt>
+						<dd class="nter">우리가 하는 일에 대한 눈부신 열정, 그 열정이 헌신이라 여겨질 정도로 일에 대해 열정을 갖는 것 </dd>
+						
+						<dt class="bold">Never-ending Change_감동</dt>
+						<dd class="extent">사소한 불편을 제거하고자 끊임없이 개선하고, 한 걸음 한 걸음 디테일을 조각해 내어 사람들을 감동시킬 대까지 노력하는 것 </dd>
+					</dl>
+					
+					<dl>
+						<dt class="bold1">Spirit</dt>
+						<dt class="bold">Conquer the Space! 우주정복</dt>
+						<dd class="nter">우리의 꿈은 우주 정복이다. 미지의 세계로 떠나 그 곳을 정복하여 꿈의 낙원을 만드는 것이 우리의 여정이다.</dd>
+						<dd  class="extent2">Con은 ‘together’, quer는 ‘search’를 의미합니다. ‘우리 모두 함께 미지의 세계를 발견하러 가보자’ 라는 뜻입니다. 우리는 남들이 만들려는 것을 똑같이 <br />개발하려는 것이 아닙니다. 항상 우리는 우리가 꿈꾸는 새로운 세계를 만들어나가야 하고 이것이 ‘우주정복’의 의미입니다. 남들이 가지 않으려는 별을 가려고<br /> 하는 것입니다. 그 별에 한 번 구경하기 위해서가 아니라 ‘정복’ 하기 위해서 가는 것입니다. 그 별을 낙원, 꿈의 나라로 만들어 그 별을 방문한 사람들에게 ‘감동’<br /> 을 주는 것이 ‘정복’ 입니다.</dd>
+					</dl>
+					
+					
+				</div><!--//culture-->
+				
+				</section><!--//section-1-->
+				
+				<section id="section-22"><!--section-2-->
+				
+					<div class="history">
+					<p class="img"><img src="./img/sub/history.png" /></p>
+						<dl>
+							<dt>끊임없는 도전으로 새로운 내일을 그려가는 기업, 엔씨소프트 </dt>
+							<dd class="text">국내 최초의 인터넷 기반 온라인 게임 리니지를 시작으로, 리니지2, 길드워, 아이온, 블레이드 & 소울, 길드워2까지 글로벌 온라인 게임 시장의 중심에 엔씨소프트가 있습니다.
+							온라인 세상의 즐거움을 확장해 나가기 위한 프로야구 제 9구단 NC 다이노스 창단까지, 엔씨소프트는 세상 사람들을 더 즐겁게 만들기 위해 끊임없이 도전하고 있습니다.
+							지속적인 연구개발 투자와 적극적인 해외시장 개척을 통해 세계적인 기업으로 성장하고, 늘 새로운 변화와 즐거운 내일을 꿈꾸는 엔씨소프트를 그려 나가겠습니다.</dd>
+						</dl>
+						
+					</div>
+					
+					<div class="awardbox">
+						<ul>
+							<li class="awardbox1"><span>수상내역</span></li>
+							<li><a href="#" onclick="window.open('http://kr.ncsoft.com/korean/aboutus/nchistory.aspx','new','resizable=no width=1000 height=1000');return false" title="연혁보기">연혁전체보기</a></li>
+						</ul>
+					</div>
+					
+					<div class="award"><!--award-->
+						<div class="award1">
+							<p><span>2016. 06</span><span class="spt">엔씨소프트문화재단 '나의 AAC' 휴먼테크놀로지어워드 2016 대상 수상</span></p>
+							<p><span class="sp">02</span><span class="spt">사내 어린이집 웃는땅콩, 보건복지부 어린이집 평가인증 만점</span></p>
+							<p><span class="sp">01</span><span class="spt">엔씨소프트문화재단, 문화체육관광부 장관 표창</span></p>
+						</div>
+						
+						<div class="award2">
+							<p><span>2015. 05</span><span class="spt">2015 상장기업대상 'IR우수기업'</span></p>
+						</div>
+						
+						<div class="award3">
+							<p><span>2014. 11</span><span class="spt">판교 R&D센터 , 2014년 한국 건축문화대상 우수상 수상</span></p>
+							<p><span class="sp">11</span><span class="spt">판교 R&D센터 , 2014년 경기도 건축문화상 대상 수상</span></p>
+						</div>
+						
+						<div class="award4">
+							<p><span>2012. 12</span><span class="spt">길드워2, 美 타임(TIME)지 선정 '올해 최고의 게임'</span></p>
+							<p><span class="sp">02</span><span class="spt">사내 어린이집 웃는땅콩, 보건복지부 어린이집 평가인증 만점</span></p>
+							<p><span class="sp">01</span><span class="spt">엔씨소프트문화재단, 문화체육관광부 장관 표창</span></p>
+							<p><span class="sp">01</span><span class="spt">엔씨소프트문화재단, 문화체육관광부 장관 표창</span></p>
+						</div>
+						
+						<div class="award5">
+							<p><span>2011. 08</span><span class="spt">아이온, ‘아시아 온라인게임 어워드’ 대상 수상</span></p>
+						</div>
+						
+						<div class="award6">
+							<p><span>2010. 08</span><span class="spt">길드워2, 유럽 게임쇼 게임스컴(Gamescom)에서 최고의 온라인게임상(Best award) 수상</span></p>
+						</div>
+						
+						<div class="award7">
+							<p><span>2009. 09</span><span class="spt">‘아이온:영원의 탑’ 2009 페니 아케이드 엑스포(PAX) 최고 MMO 게임상(Best MMO)</span></p>
+							<p><span class="sp">08</span><span class="spt">‘아이온:영원의 탑’ 2009 게임스컴(Gamescom) 최고의 온라인게임상(Best Online Game Award)</span></p>
+						</div>
+						
+						<div class="award8">
+							<p><span>2008. 12</span><span class="spt">아이온:영원의 탑' 2008 대한민국 게임대상 대통령상 수상</span></p>
+							<p><span class="sp">12</span><span class="spt">2008 '올해의 인터넷기업상' 특별상 - 웹 2.0 부문 수상 (한국인터넷기업협회)</span></p>
+							<p><span class="sp">12</span><span class="spt">2008 '올해의 인터넷기업상' 게임 부문 수상 (한국인터넷기업협회)</span></p>
+						</div>
+						
+						<div class="award9">
+							<p><span>2007. 12</span><span class="spt">'올해의 인터넷 기업상' 해외진출부문 수상 (한국인터넷기업협회)</span></p>
+							<p><span class="sp">11</span><span class="spt">리니지 4년 연속 수퍼브랜드 선정 (산업자원부)</span></p>
+						</div>
+						
+						<div class="award10">
+							<p><span>2006. 12</span><span class="spt">리니지 3년 연속 수퍼브랜드 선정 (산업자원부)</span></p>
+							<p><span class="sp">12</span><span class="spt">2006 대한민국 게임대상 사회공헌 우수기업상 수상</span></p>
+							<p><span class="sp">02</span><span class="spt">길드워, 시티 오브 빌런 美 AIAA(Annual Interactive Achievement Awards) 올해의 게임 부문 공동 수상</span></p>
+						</div>
+						
+						<div class="award11">
+							<p><span>2005. 12</span><span class="spt">엔씨소프트 세계일류상품 생산 기업 정식 인증 (산업자원부)</span></p>
+							<p><span class="sp">12</span><span class="spt">길드워 2005 대한민국 게임대상 게임그래픽 부문 기술창작상 수상</span></p>
+							<p><span class="sp">12</span><span class="spt">리니지 II 2005 대한민국 문화콘텐츠 수출대상 대상(국무총리상) 수상</span></p>
+							<p><span class="sp">12</span><span class="spt">리니지 수퍼브랜드 선정 (산업자원부)</span></p>
+							<p><span class="sp">12</span><span class="spt">길드워 정보통신부 디지털컨텐츠 대상(대통령상) 수상</span></p>
+							<p><span class="sp">07</span><span class="spt">엔씨소프트 '존경받는 30대 한국 기업' 선정 (한국 IBM BCS / 동아일보)</span></p>
+							<p><span class="sp">04</span><span class="spt">길드워, 정보통신부 디지털컨텐츠 대상 선정</span></p>
+							<p><span class="sp">03</span><span class="spt">엔씨소프트 정보보호안전진단 필증 획득 (정보통신부)</span></p>
+							<p><span class="sp">01</span><span class="spt">엔씨소프트 RPG 볼트 선정 2004 올해의 게임 개발 / 퍼블리셔 선정 (Developer / Publisher of the Year)</span></p>
+						</div>
+						
+						<div class="award12">
+							<p><span>2004. 11</span><span class="spt">리니지 수퍼브랜드 선정</span></p>
+						</div>
+						
+						<div class="award13">
+							<p><span>2003. 12</span><span class="spt">리니지 II 2003 대한민국 게임대상 대상(대통령상) 수상 (문화관광부)</span></p>
+							<p><span class="sp">11</span><span class="spt">엔씨소프트, 개인정보보호 우수업체로 선정 (한국정보통신산업협회)</span></p>
+							<p><span class="sp">11</span><span class="spt">제4회 정보통신 디지털 대상 대통령상 수상</span></p>
+						</div>
+						
+						<div class="award14">
+							<p><span>2002. 12</span><span class="spt">2002년 대한민국 게임대상 수출상 수상 (문화관광부)</span></p>
+							<p><span class="sp">11</span><span class="spt">제3회 정보통신기업 디지털대상 정보통신부장관상 수상</span></p>
+							<p><span class="sp">11</span><span class="spt">제1회 대한민국 문화콘텐츠 수출대상 대상 수상span></p>
+						</div>
+						
+						<div class="award15">
+							<p><span>2001. 12</span><span class="spt">산업자원부 선정 세계일류상품 인증서 획득</span></p>
+							<p><span class="sp">12</span><span class="spt">소프트엑스포 디지털콘텐츠페어 2001 산업포장 수상</span></p>
+							<p><span class="sp">12</span><span class="spt">정보통신부 선정 중소정보통신기업 부문 최우수상 수상</span></p>
+							<p><span class="sp">11</span><span class="spt">제1회 IR 우수 기업 코스닥 부문 우수상 수상 (한국 IR 협의회)</span></p>
+						</div>
+						
+						<div class="award16">
+							<p><span>1998. 12</span><span class="spt">리니지 '98 대한민국 게임대상 대상 수상 (문화관광부)</span></p>
+						</div>
+						
+						
+					</div>		<!--//award-->	
+					
+				</section><!--//secition-2-->
+				
+				<section id="section-33"><!--section-3-->
+				<p><img src="./img/sub/ceotext.png" /></p>
+				</section><!--//secition-3-->
+				
+				<section id="section-44"><!--section-4-->
+				<p><img src="./img/sub/globaltext.png" /></p>
+				</section><!--//secition-4-->
+				</div><!--//content -->
+			
+			
+				<div class="containner"><!--containner-->
+	
+	<div class="toppppbox">
+    <ul class="sub1textboxB">
+        <li class="active" rel="tab1"><a href="javascript:void(2)">시그니쳐(Signature)</a></li>
+        <li rel="tab2"><a href="javascript:void(2)">단색 시그니쳐(Monochromic Signature)</a></li>
+        <li rel="tab3"><a href="javascript:void(2)">로고타입(Logotype)</a></li>
+    </ul>
+	</div>
+	
+    <div class="signatureS">
+        <div id="tab1" class="tab_content">
+          <div class="signaturebox"><!--box-->
+				
+				<div class="signat">
+				<p><img src="./img/sub/sub1sig.png" alt="boxlogo" /></p>
+					<dl class="signalogo">
+						<dd class="signalogo1"><img src="./img/sub/sub1logobg1.png" alt="logo1" /></dd>
+						<dd class="signalogo2"><img src="./img/sub/sub1logobg2.png" alt="logo2" /></dd>
+						<dd class="signalogo3"><img src="./img/sub/sub1logobg3.png" alt="logo3" /></dd>
+					</dl>
+				</div>
+								
+				<div class="signatextbox1">
+					<dl>
+						<dt>혁신적인 변화와 성장의 의미</dt>
+						<dd>엔씨소프트의 시그니쳐는 글로벌 환경에서 혁신적인 변화와 성장의 의미를 담고 있으며 현재에 만족하지 않고 항상 도전하며 끊임없이 창의를 추구하는 엔씨인의 정신을 형상화 한 것입니다. N과 C의 연결을 이용한 공간의 입체형태는 엔씨소프트와 고객이 즐거움으로 연결되는 새로운 세상의 창조를 의미합니다. </dd>
+					</dl>
+				</div>
+				
+				<div class="signatextbox2">
+					<dl>
+						<dt>창의적이며 미래지향적 컬러</dt>
+						<dd>엔씨소프트의 시그니쳐는 글로벌 환경에서 혁신적인 변화와 성장의 의미를 담고 있으며 현재에 만족하지 않고 항상 도전하며 끊임없이 창의를 추구하는 엔씨인의 정신을 형상화 한 것입니다. N과 C의 연결을 이용한 공간의 입체형태는 엔씨소프트와 고객이 즐거움으로 연결되는 새로운 세상의 창조를 의미합니다. </dd>
+					</dl>
+				</div>
+				
+				</div><!--//box-->
+				
+				
+				<div id="signaturecolor"><!--color-->
+				
+					<p class="colortx">컬러(Color)</p>
+					
+						<div class="color"><!--colorinner-->
+							
+							<div class="color1">
+								<p class="Goldtx">Star btight Gold</p>
+								<dl>
+									<dt>34˚</dt>
+									<dd>CMYK : 16/30/56/0</dd>
+									<dd>RGB : 216/177/126</dd>
+									<dd>HEX : #D8B17E</dd>
+									<span class="spc">PANTONE 874 C</span>
+								</dl>
+							</div>
+							
+							<div class="color2">
+								<p class="Blue">Ultimate Blue</p>
+								<dl>									
+									<dt>213˚</dt>
+									<dd >CMYK : 100/89/33/23</dd>
+									<dd>RGB : 31/50/99</dd>
+									<dd>HEX : #1F3263</dd>
+									<span class="spc">PANTONE 541 C</span>
+								</dl>
+							</div>
+							
+							<div class="color3">
+							<p class="White">Pure White</p>
+								<dl></dl>
+							</div>
+								
+							<div class="color4">
+							<p class="DarkGray">Dark Gray</p>
+								<dl>
+									<dd>CMYK : 0/0/0/80</dd>
+									<dd>RGB : 51/51/51</dd>
+									<dd>HEX : #333333</dd>
+								</dl>
+							</div>
+
+							<div class="color5">
+								<p class="Gray">Gray</p>
+								<dl>							
+									<dd>CMYK : 0/0/0/55</dd>
+									<dd>RGB : 115/115/115</dd>
+									<dd>HEX : #737373</dd>
+								</dl>
+							</div>
+							
+							<div class="color6">
+								<p class="LightGray">Light Gray</p>
+								<dl>
+									<dd>CMYK : 0/0/0/35<dd/>
+									<dd>RGB : 166/166/166<dd/>
+									<dd>HEX : #A6A6A6</dd>
+								</dl>
+							</div>
+					</div><!--//colorinner-->
+				</div><!--//color-->
+				
+				<div class="ratio"><!--ratio-->
+				
+					<p>Signature Ratio</p>
+					
+					<div class="rati">
+					<dl>
+						<dt>로고타입과 심볼마크의 상하비율 1:2<br />Logotype : Symbol = 1:2</dt>
+					</dl>
+					</div>
+					
+				</div><!--//ratio-->
+        </div>
+
+        <div id="tab2" class="tab_content">
+			<p><img src="./img/sub/monosig.png" /></p>
+			<p class="tab2logo"><img src="./img/sub/monosigfoot.png" /></p>
+		</div>
+
+        <div id="tab3" class="tab_content">
+			<p class="tab2logo"><img src="./img/sub/monologo.png" /></p>
+		</div>
+
+    </div><!--//signatureS -->
+</div><!--//containner-->
+
+				</section><!--tabs,sub1contentsinner-->			
+		</section><!--//sub1contents-->
+		
+		<script>
+			new CBPFWTabs( document.getElementById( 'tabs' ) );
+		</script>
+		
+		<script>
+		window.onload = function(){
+	setTimeout (function(){
+	scrollTo(0,0);}, 100);
+	}
+	</script>
+		<section id="footer"><!--footer-->
+				<div class="footerinner">
+					<dl>
+						<dd class="ser"><a href="https://cs.plaync.com/" target="_blank" title="고객센터">고객센터</a></dd>
+						<dd class="cs"><a href="http://kr.ncsoft.com/korean/support/service.aspx" target="_blank"  title="게임관련문의">게임관련문의처</a></dd>
+						<dd class="pri"><a href="#" onclick="window.open('http://kr.ncsoft.com/korean/popup/privacy/privacy151216.aspx','new','resizable=no width=1000 height=1000');return false" title="개인정보처리방침">개인정보처리방침</a></dd>
+						<dd class="youtube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/yousns.png" /></a></dd>
+						<dd class="twiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/twisns.png" /></a></dd>
+						<dd class="facebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/facesns.png" /></a></dd>
+						
+						<dd class="mbyoutube"><a target="_blank" href="http://www.youtube.com/plaync" title="youtube"><img src="./img/common/mbyousns.png" /></a></dd>
+						<dd class="mbtwiter"><a target="_blank" href="http://www.twitter.com/NCSOFT" title="twiter"><img src="./img/common/mbtwisns.png" /></a></dd>
+						<dd class="mbfacebook"><a target="_blank" href="http://www.facebook.com/NCSOFT" title="facebook"><img src="./img/common/mbfacesns.png" /></a></dd>
+						
+						<dd class="footerlogo"><img src="./img/common/footerlogo.png"  alt="하단로고"/></dd>
+						<dd class="footerlogo2"><img src="./img/common/tb_logo2.png" alt="footerplaynclogo2" /></dd>
+						<dd class="footermblogo2"><a href="http://www.plaync.com/"><img src="./img/common/mb_logo2.png" alt="footerplaynclogo2" /></a></dd>
+						<dd class="address"><address>(주)엔씨소프트 경기도 성남시 분당구 대왕판교로 644번길 12 (우)13494 대표 김택진<br class="tbspace" />사업자등록번호114-85-04244 통신판매업신고 제2013-경기성남-1268호</address><p>Copyright&copy;NCSOFT Corporation. All Right Reserved.</p></dd>
+					</dl>
+					
+					<!--메뉴구성-->
+					<dl id="sample" class="dropdown">
+						<dt class="drop"><a href="javascript:void(0)"><img src="./img/common/drop.png" /></a></dt>
+						<dd class="dropmenu">
+							<ul class="dropline">
+								<li><a href="http://www.ncsoft.co.kr/" target="_blank">NCSOFT 한국 본사</a></li>
+								<li><a href="http://us.ncsoft.com/" target="_blank">NCSOFT West (US)</a></li>
+								<li><a href="http://eu.ncsoft.com/en-gb/" target="_blank">NCSOFT West (EU)</a></li>
+								<li><a href="http://www.arena.net/" target="_blank">ArenaNet</a></li>
+								<li><a href="http://www.nctaiwan.com/" target="_blank">NC Taiwan</a></li>
+								<li><a href="http://www.ncjapan.co.jp/" target="_blank">NC Japan</a></li>
+							</ul>
+						</dd>
+					
+					</dl>
+					<!--메뉴구성-->
+					</div>
+				</section><!--//footer-->
+	</main>
+</body>
+</html>
